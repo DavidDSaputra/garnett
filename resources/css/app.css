@@ -1,0 +1,42 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@theme {
+    --color-solar-yellow: #FDB813;
+    --color-eco-green: #1F7A63;
+    --color-slate-dark: #0F172A;
+    
+    --font-heading: 'Space Grotesk', 'Inter', system-ui, sans-serif;
+    --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+    
+    --shadow-brutal: 4px 4px 0px 0px var(--color-slate-dark);
+    --shadow-brutal-lg: 8px 8px 0px 0px var(--color-slate-dark);
+}
+
+@layer base {
+    body {
+        @apply bg-white text-slate-dark font-sans selection:bg-solar-yellow selection:text-slate-dark;
+    }
+    h1, h2, h3, h4, h5, h6 {
+        @apply font-heading font-bold uppercase tracking-tight;
+    }
+}
+
+@layer utilities {
+    .brutal-border {
+        @apply border-4 border-slate-dark;
+    }
+    .brutal-card {
+        @apply border-4 border-slate-dark shadow-brutal transition-transform hover:-translate-y-1 hover:shadow-brutal-lg bg-white;
+    }
+    .brutal-btn {
+        @apply border-4 border-slate-dark shadow-brutal transition-all hover:-translate-y-1 hover:shadow-brutal-lg hover:bg-slate-dark hover:text-white active:translate-y-1 active:shadow-none bg-solar-yellow text-slate-dark font-heading font-bold uppercase px-8 py-4 inline-block;
+    }
+    .brutal-btn-alt {
+        @apply border-4 border-slate-dark shadow-brutal transition-all hover:-translate-y-1 hover:shadow-brutal-lg hover:bg-eco-green active:translate-y-1 active:shadow-none bg-white text-slate-dark font-heading font-bold uppercase px-8 py-4 inline-block;
+    }
+}
