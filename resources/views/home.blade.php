@@ -5,6 +5,11 @@
         subtitle="Solusi energi terbarukan yang efisien, dan modern untuk kompleks perumahan dan industri."
         link="/contact" />
 
+    <!-- Garnett Banner -->
+    <section class="border-b-8 border-slate-dark bg-slate-100">
+        <img src="{{ asset('images/garnett-sun.png') }}" alt="Garnett Solar Technology" class="w-full h-auto object-contain max-h-[300px] md:max-h-[500px]">
+    </section>
+
     <!-- Trusted Clients Scrolling Marquee -->
     <section class="py-12 border-b-8 border-slate-dark bg-white overflow-hidden relative">
         <div class="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-white to-transparent z-10"></div>
@@ -217,7 +222,7 @@
                 
                 <div class="w-full lg:w-1/2" data-aos="fade-left">
                     <div class="relative p-4 bg-white border-8 border-slate-dark shadow-brutal-lg transform rotate-2 hover:rotate-0 transition-transform duration-500">
-                        <img src="{{ asset('images/solar1.png') }}" alt="Solar Installation Worker" class="w-full h-auto border-4 border-slate-dark object-cover aspect-video filter grayscale hover:grayscale-0 transition-all duration-300">
+                        <img src="{{ asset('images/rumah-solar.jpg') }}" alt="Instalasi Rumah Solar" class="w-full h-auto border-4 border-slate-dark object-cover aspect-video transition-all duration-300">
                         <div class="absolute -bottom-8 -left-8 bg-eco-green text-white p-6 border-4 border-slate-dark shadow-brutal">
                             <span class="block text-4xl font-black">25+</span>
                             <span class="block text-sm font-bold uppercase tracking-widest">Tahun Garansi</span>

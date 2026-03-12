@@ -116,25 +116,85 @@
             
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <!-- Image 1 -->
-                <div class="border-4 border-slate-dark shadow-brutal hover:translate-x-2 transition-transform duration-300 group overflow-hidden" data-aos="zoom-in" data-aos-delay="0">
-                    <img src="https://images.unsplash.com/photo-1548614606-52b4451f994b?q=80&w=800&auto=format&fit=crop" alt="Pekerja Instalasi Solar Panel" class="w-full h-80 object-cover filter grayscale group-hover:grayscale-0 transition-all duration-500 transform group-hover:scale-105">
+                <div class="border-4 border-slate-dark shadow-brutal hover:translate-x-2 transition-transform duration-300 group overflow-hidden bg-slate-100" data-aos="zoom-in" data-aos-delay="0">
+                    <img src="{{ asset('images/solar1.png') }}" alt="Pekerja Instalasi Solar Panel" class="w-full h-80 object-cover transition-all duration-500 transform group-hover:scale-105">
                 </div>
                 <!-- Image 2 -->
-                <div class="border-4 border-slate-dark shadow-brutal hover:-translate-y-2 transition-transform duration-300 group overflow-hidden md:col-span-2 lg:col-span-1" data-aos="zoom-in" data-aos-delay="100">
-                    <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=800&auto=format&fit=crop" alt="Deretan Solar Panel Industri" class="w-full h-80 object-cover filter grayscale group-hover:grayscale-0 transition-all duration-500 transform group-hover:scale-105">
+                <div class="border-4 border-slate-dark shadow-brutal hover:-translate-y-2 transition-transform duration-300 group overflow-hidden md:col-span-2 lg:col-span-1 bg-slate-100" data-aos="zoom-in" data-aos-delay="100">
+                    <img src="{{ asset('images/solar2.png') }}" alt="Deretan Solar Panel Industri" class="w-full h-80 object-cover transition-all duration-500 transform group-hover:scale-105">
                 </div>
                 <!-- Image 3 -->
-                <div class="border-4 border-slate-dark shadow-brutal hover:translate-x-2 transition-transform duration-300 group overflow-hidden" data-aos="zoom-in" data-aos-delay="200">
-                    <img src="https://images.unsplash.com/photo-1497440001374-f26997328c1b?q=80&w=800&auto=format&fit=crop" alt="Stasiun Energi Surya" class="w-full h-80 object-cover filter grayscale group-hover:grayscale-0 transition-all duration-500 transform group-hover:scale-105">
+                <div class="border-4 border-slate-dark shadow-brutal hover:translate-x-2 transition-transform duration-300 group overflow-hidden bg-slate-100" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="{{ asset('images/solar3.png') }}" alt="Stasiun Energi Surya" class="w-full h-80 object-cover transition-all duration-500 transform group-hover:scale-105">
                 </div>
                 <!-- Image 4 -->
-                <div class="border-4 border-slate-dark shadow-brutal hover:-translate-y-2 transition-transform duration-300 group overflow-hidden lg:col-span-2" data-aos="zoom-in" data-aos-delay="300">
-                    <img src="https://images.unsplash.com/photo-1613665813446-82a78c468a1d?q=80&w=1200&auto=format&fit=crop" alt="Teknisi Memeriksa Panel Surya" class="w-full h-96 object-cover filter grayscale group-hover:grayscale-0 transition-all duration-500 transform group-hover:scale-105">
+                <div class="border-4 border-slate-dark shadow-brutal hover:-translate-y-2 transition-transform duration-300 group overflow-hidden lg:col-span-2 bg-slate-100" data-aos="zoom-in" data-aos-delay="300">
+                    <img src="{{ asset('images/solar4.png') }}" alt="Teknisi Memeriksa Panel Surya" class="w-full h-96 object-cover transition-all duration-500 transform group-hover:scale-105">
                 </div>
-                <!-- Info Box -->
-                <div class="border-8 border-slate-dark bg-eco-green text-white p-8 flex flex-col justify-center shadow-brutal-lg transform -rotate-1 hover:rotate-0 transition-transform duration-300" data-aos="fade-up" data-aos-delay="400">
-                    <h3 class="text-3xl font-black uppercase mb-4">Presisi Mutlak</h3>
-                    <p class="text-lg font-bold">Setiap modul terpasang melalui inspeksi ketat dan kalibrasi presisi untuk memastikan performa puncak tanpa kompromi.</p>
+                <!-- Info Box (Using the 5th image as a subtle background pattern) -->
+                <div class="border-8 border-slate-dark text-white p-8 flex flex-col justify-center shadow-brutal-lg transform -rotate-1 hover:rotate-0 transition-transform duration-300 relative overflow-hidden" data-aos="fade-up" data-aos-delay="400">
+                    <!-- Background Image 5 -->
+                    <div class="absolute inset-0 z-0">
+                        <img src="{{ asset('images/solar5.jpg') }}" class="w-full h-full object-cover filter grayscale opacity-40 mix-blend-multiply" alt="Background Texture">
+                        <div class="absolute inset-0 bg-eco-green bg-opacity-90 mix-blend-multiply"></div>
+                    </div>
+                    
+                    <div class="relative z-10">
+                        <h3 class="text-3xl font-black uppercase mb-4 text-solar-yellow" style="text-shadow: 2px 2px 0px #0F172A;">Presisi Mutlak</h3>
+                        <p class="text-lg font-bold leading-relaxed text-slate-100" style="text-shadow: 1px 1px 0px #0F172A;">Setiap modul terpasang melalui inspeksi ketat dan kalibrasi presisi untuk memastikan performa puncak tanpa kompromi.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- System Types Diagrams -->
+    <section class="py-24 bg-white border-t-8 border-slate-dark">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-5xl font-black uppercase mb-8 text-center" data-aos="fade-up">Tipe <span class="text-transparent" style="-webkit-text-stroke: 2px var(--color-slate-dark);">Sistem</span></h2>
+            <p class="text-xl font-medium text-center max-w-3xl mx-auto mb-16 text-slate-600" data-aos="fade-up" data-aos-delay="100">Rancangan arsitektur aliran daya yang dirancang khusus untuk memenuhi standar keandalan energi di berbagai skenario operasional.</p>
+            
+            <div class="flex flex-col gap-16">
+                <!-- On-Grid -->
+                <div class="border-8 border-slate-dark shadow-brutal-lg transform -rotate-1 hover:rotate-0 transition-transform bg-slate-50 relative p-8 md:p-12 overflow-hidden" data-aos="fade-up">
+                    <div class="absolute top-0 right-0 bg-solar-yellow text-slate-dark font-black px-6 py-2 border-l-8 border-b-8 border-slate-dark uppercase tracking-widest text-xl">On-Grid</div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                        <div>
+                            <h3 class="text-4xl font-black uppercase mb-4 text-slate-dark">Sistem Terintegrasi PLN</h3>
+                            <p class="text-lg font-medium text-slate-700 leading-relaxed">Terhubung langsung dengan jaringan utilitas (PLN). Kelebihan energi surya di siang hari diekspor ke grid (Net-Metering). Sistem ini sangat ampuh memangkas biaya listrik operasional siang hari tanpa memerlukan baterai penyimpan tugas berat yang mahal.</p>
+                        </div>
+                        <div class="border-4 border-slate-dark bg-white p-2 shadow-brutal">
+                            <img src="{{ asset('images/cara-kerja-on-grid.jpg') }}" alt="Diagram Cara Kerja PLTS On-Grid" class="w-full h-auto object-contain">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Off-Grid -->
+                <div class="border-8 border-slate-dark shadow-[12px_12px_0px_0px_#1F7A63] transform rotate-1 hover:rotate-0 transition-transform bg-slate-50 relative p-8 md:p-12 overflow-hidden" data-aos="fade-up">
+                    <div class="absolute top-0 right-0 bg-eco-green text-white font-black px-6 py-2 border-l-8 border-b-8 border-slate-dark uppercase tracking-widest text-xl">Off-Grid</div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                        <div class="order-2 md:order-1 border-4 border-slate-dark bg-white p-2 shadow-brutal">
+                            <img src="{{ asset('images/cara-kerja-off-grid.jpg') }}" alt="Diagram Cara Kerja PLTS Off-Grid" class="w-full h-auto object-contain">
+                        </div>
+                        <div class="order-1 md:order-2">
+                            <h3 class="text-4xl font-black uppercase mb-4 text-slate-dark">Kemandirian Absolut</h3>
+                            <p class="text-lg font-medium text-slate-700 leading-relaxed">Beroperasi secara independen tanpa ketergantungan jaringan listrik. Semua daya yang dihasilkan disimpan ke dalam bank baterai litium raksasa. Dirancang khusus untuk posko terpencil, pertambangan, dan wilayah yang tak terjangkau kabel distribusi.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hybrid -->
+                <div class="border-8 border-slate-dark shadow-brutal-lg transform -rotate-1 hover:rotate-0 transition-transform bg-slate-50 relative p-8 md:p-12 overflow-hidden" data-aos="fade-up">
+                    <div class="absolute top-0 right-0 bg-slate-dark text-white font-black px-6 py-2 border-l-8 border-b-8 border-slate-dark uppercase tracking-widest text-xl">Hybrid</div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                        <div>
+                            <h3 class="text-4xl font-black uppercase mb-4 text-slate-dark">Fleksibilitas Tanpa Batas</h3>
+                            <p class="text-lg font-medium text-slate-700 leading-relaxed">Penggabungan sistem On-Grid dan kapasitas Off-Grid. Mengembalikan surplus listrik ke jaringan sekaligus mengisi baterai penyimpanan untuk *backup*. Tidak akan ada pemadaman (blackout) karena sistem dengan instan mensuplai dari baterai jika jaringan utama terputus secara mendadak.</p>
+                        </div>
+                        <div class="border-4 border-slate-dark bg-white p-2 shadow-brutal">
+                            <img src="{{ asset('images/cara-kerja-hybrid.jpg') }}" alt="Diagram Cara Kerja PLTS Hybrid" class="w-full h-auto object-contain">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
