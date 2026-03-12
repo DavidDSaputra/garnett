@@ -121,6 +121,38 @@
                                 </div>
                             </div>
                         </div>
+                    @elseif($service->slug === 'ev-charging')
+                        <div class="mt-16 space-y-16">
+                            <!-- Section 1: Urban EV Infrastructure -->
+                            <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12">
+                                <div class="w-full md:w-1/2">
+                                    <div class="border-4 border-slate-dark shadow-brutal overflow-hidden">
+                                        <img src="{{ asset('images/ev-1.png') }}" alt="Infrastruktur EV Charging Perkotaan" class="w-full h-[350px] object-cover hover:scale-105 transition-transform duration-500">
+                                    </div>
+                                </div>
+                                <div class="w-full md:w-1/2">
+                                    <h3 class="text-3xl font-black uppercase mb-4 text-[#3B82F6]"><span class="text-transparent" style="-webkit-text-stroke: 1px var(--color-slate-dark);">Infrastruktur</span> Pengisian Publik</h3>
+                                    <p class="font-medium text-lg leading-relaxed text-slate-700">
+                                        Stasiun <em>EV Charging</em> komersial yang dirancang dengan estetika modern untuk area perkotaan, pusat perbelanjaan, dan perkantoran elit. Dilengkapi layar sentuh interaktif, kompatibilitas universal (Type 2, CCS), dan kemampuan terhubung dengan sistem pembayaran digital.
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <!-- Section 2: Solar Carport EV Charging -->
+                            <div class="flex flex-col md:flex-row-reverse items-center gap-8 md:gap-12">
+                                <div class="w-full md:w-1/2">
+                                    <div class="border-4 border-slate-dark shadow-brutal p-4 bg-slate-50 flex justify-center">
+                                        <img src="{{ asset('images/ev-2.png') }}" alt="Solar Carport EV Charging" class="max-h-[350px] object-contain hover:scale-105 transition-transform duration-500">
+                                    </div>
+                                </div>
+                                <div class="w-full md:w-1/2">
+                                    <h3 class="text-3xl font-black uppercase mb-4">Pengisian <span class="text-solar-yellow underline decoration-4 underline-offset-4 decoration-slate-dark">Tenaga Surya</span> Berkecepatan Tinggi</h3>
+                                    <p class="font-medium text-lg leading-relaxed text-slate-700">
+                                        Transformasikan lahan parkir Anda menjadi stasiun <em>Fast Charging</em> bebas emisi. Sistem <em>Solar Carport</em> menangkap energi matahari secara langsung, dan secara tangguh mendistribusikan daya stasiun <em>EV Charger</em> Anda tanpa melulu bergantung pada puncak beban <em>grid</em> kelistrikan PLN.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                     @endif
                 </div>
                 
