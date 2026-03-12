@@ -5,11 +5,6 @@
         subtitle="Solusi energi terbarukan yang efisien, dan modern untuk kompleks perumahan dan industri."
         link="/contact" />
 
-    <!-- Garnett Banner -->
-    <section class="border-b-8 border-slate-dark bg-slate-100">
-        <img src="{{ asset('images/garnett-sun.png') }}" alt="Garnett Solar Technology" loading="lazy" decoding="async" class="w-full h-auto object-contain max-h-[300px] md:max-h-[500px]">
-    </section>
-
     <!-- Trusted Clients Scrolling Marquee -->
     <section class="py-12 border-b-8 border-slate-dark bg-white overflow-hidden relative">
         <div class="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-white to-transparent z-10"></div>
