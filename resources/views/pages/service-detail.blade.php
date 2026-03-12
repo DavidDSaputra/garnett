@@ -59,6 +59,37 @@
                             </ul>
                         @endif
                     </div>
+                    @if($service->slug === 'pjuts')
+                        <div class="mt-16">
+                            <h3 class="text-3xl font-black uppercase mb-8 border-b-4 border-solar-yellow pb-2 inline-block">Galeri Portofolio & Produk</h3>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                                <div class="border-4 border-slate-dark shadow-brutal overflow-hidden group cursor-pointer bg-slate-100 flex items-center justify-center relative">
+                                    <div class="absolute inset-0 bg-slate-dark/0 group-hover:bg-slate-dark/20 transition-colors z-10 flex items-center justify-center">
+                                        <svg class="w-12 h-12 text-white opacity-0 group-hover:opacity-100 transition-opacity transform scale-50 group-hover:scale-100 duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"></path></svg>
+                                    </div>
+                                    <img src="{{ asset('images/pjuts-4.png') }}" alt="Detail Produk PJUTS" class="w-full h-64 object-contain p-4 transform transition-transform duration-700 group-hover:scale-110">
+                                </div>
+                                <div class="border-4 border-slate-dark shadow-brutal overflow-hidden group cursor-pointer relative">
+                                    <div class="absolute inset-0 bg-slate-dark/0 group-hover:bg-slate-dark/20 transition-colors z-10 flex items-center justify-center">
+                                        <svg class="w-12 h-12 text-white opacity-0 group-hover:opacity-100 transition-opacity transform scale-50 group-hover:scale-100 duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                                    </div>
+                                    <img src="{{ asset('images/pjuts-1.jpg') }}" alt="PJUTS Instalasi Kawasan" class="w-full h-64 object-cover transform transition-transform duration-700 group-hover:scale-110">
+                                </div>
+                                <div class="border-4 border-slate-dark shadow-brutal overflow-hidden group cursor-pointer relative">
+                                    <div class="absolute inset-0 bg-slate-dark/0 group-hover:bg-slate-dark/20 transition-colors z-10 flex items-center justify-center">
+                                        <svg class="w-12 h-12 text-white opacity-0 group-hover:opacity-100 transition-opacity transform scale-50 group-hover:scale-100 duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                                    </div>
+                                    <img src="{{ asset('images/pjuts-2.png') }}" alt="PJUTS Instalasi Pesisir" class="w-full h-64 object-cover transform transition-transform duration-700 group-hover:scale-110">
+                                </div>
+                                <div class="border-4 border-slate-dark shadow-brutal overflow-hidden group cursor-pointer relative">
+                                    <div class="absolute inset-0 bg-slate-dark/0 group-hover:bg-slate-dark/20 transition-colors z-10 flex items-center justify-center">
+                                        <svg class="w-12 h-12 text-white opacity-0 group-hover:opacity-100 transition-opacity transform scale-50 group-hover:scale-100 duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                                    </div>
+                                    <img src="{{ asset('images/pjuts-3.jpg') }}" alt="PJUTS Instalasi Jalan Raya" class="w-full h-64 object-cover transform transition-transform duration-700 group-hover:scale-110">
+                                </div>
+                            </div>
+                        </div>
+                    @endif
                 </div>
                 
                 <div class="lg:col-span-1">
