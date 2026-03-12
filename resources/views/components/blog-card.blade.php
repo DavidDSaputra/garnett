@@ -3,11 +3,11 @@
 <article class="brutal-card flex flex-col h-full bg-white" data-aos="fade-up">
     @if(isset($post->featured_image) && $post->featured_image)
         <a href="/blog/{{ $post->slug ?? '#' }}" class="block overflow-hidden border-b-4 border-slate-dark h-56 shrink-0 bg-slate-200">
-            <img src="{{ asset('storage/' . $post->featured_image) }}" alt="{{ $post->title ?? 'Blog Post' }}" class="w-full h-full object-cover hover:scale-110 transition-transform duration-700">
+            <img src="{{ asset('storage/' . $post->featured_image) }}" alt="{{ $post->title ?? 'Blog Post' }}" loading="lazy" decoding="async" class="w-full h-full object-cover hover:scale-110 transition-transform duration-700">
         </a>
     @else
         <a href="/blog/{{ $post->slug ?? '#' }}" class="block overflow-hidden border-b-4 border-slate-dark h-56 shrink-0 bg-slate-200">
-            <img src="{{ asset('images/solar2.png') }}" alt="Blog Post" class="w-full h-full object-cover hover:scale-110 transition-transform duration-700">
+            <img src="{{ asset('images/solar2.png') }}" alt="Blog Post" loading="lazy" decoding="async" class="w-full h-full object-cover hover:scale-110 transition-transform duration-700">
         </a>
     @endif
     

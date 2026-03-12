@@ -44,7 +44,7 @@
                             
                             <div class="flex items-center gap-4 border-t-4 border-slate-dark pt-4">
                                 @if(isset($testimonial->avatar) && $testimonial->avatar)
-                                    <img src="{{ asset('storage/' . $testimonial->avatar) }}" alt="{{ $testimonial->client_name }}" class="w-14 h-14 border-2 border-slate-dark object-cover grayscale">
+                                    <img src="{{ asset('storage/' . $testimonial->avatar) }}" alt="{{ $testimonial->client_name }}" loading="lazy" decoding="async" class="w-14 h-14 border-2 border-slate-dark object-cover grayscale">
                                 @else
                                     <div class="w-14 h-14 border-2 border-slate-dark bg-slate-200 flex items-center justify-center font-bold text-xl uppercase">
                                         {{ substr($testimonial->client_name ?? 'C', 0, 1) }}

@@ -3,9 +3,9 @@
 <a href="/projects/{{ $project->slug ?? '#' }}" class="brutal-card block group" data-aos="zoom-in">
     <div class="relative h-64 border-b-4 border-slate-dark overflow-hidden bg-slate-200">
         @if(isset($project->featured_image) && $project->featured_image)
-            <img src="{{ asset('storage/' . $project->featured_image) }}" alt="{{ $project->title ?? 'Project' }}" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+            <img src="{{ asset('storage/' . $project->featured_image) }}" alt="{{ $project->title ?? 'Project' }}" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
         @else
-            <img src="{{ asset('images/solar3.png') }}" alt="Project" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+            <img src="{{ asset('images/solar3.png') }}" alt="Project" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
         @endif
         
         <div class="absolute top-4 right-4 bg-eco-green text-white font-bold px-3 py-1 border-2 border-slate-dark text-sm uppercase">

@@ -12,7 +12,7 @@
     <div class="relative z-10 flex flex-col h-full">
         <div class="text-5xl border-4 border-slate-dark w-20 h-20 flex items-center justify-center bg-white shadow-[4px_4px_0px_0px_currentColor] mb-8 group-hover:scale-110 transition-transform">
             @if($icon)
-                <img src="{{ $icon }}" alt="{{ $title }}" class="w-10 h-10 object-contain">
+                <img src="{{ $icon }}" alt="{{ $title }}" loading="lazy" decoding="async" class="w-10 h-10 object-contain">
             @else
                 <!-- Default Icon -->
                 <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="square" stroke-linejoin="miter" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
