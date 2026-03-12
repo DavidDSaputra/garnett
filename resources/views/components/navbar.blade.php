@@ -29,7 +29,7 @@
                     </a>
                     
                     <!-- Dropdown -->
-                    <div class="relative" x-data="{ openServices: false }" @click.away="openServices = false" @mouseleave="openServices = false">
+                    <div class="relative py-8" x-data="{ openServices: false }" @click.away="openServices = false" @mouseleave="openServices = false">
                         <button @mouseover="openServices = true" class="font-bold uppercase hover:text-solar-yellow transition-colors relative group flex items-center gap-1">
                             Layanan
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
@@ -37,9 +37,9 @@
                         
                         <div x-show="openServices" 
                              x-transition.opacity.duration.200ms
-                             class="absolute left-0 mt-2 w-56 bg-white border-4 border-slate-dark shadow-brutal text-slate-dark group-hover:block"
+                             class="absolute left-0 top-full pt-2 w-56 group-hover:block z-50"
                              style="display: none;">
-                            <div class="py-2 flex flex-col">
+                            <div class="bg-white border-4 border-slate-dark shadow-brutal text-slate-dark py-2 flex flex-col">
                                 <a href="/services" class="px-4 py-2 font-bold uppercase hover:bg-solar-yellow hover:translate-x-2 transition-transform">Semua Layanan</a>
                                 <a href="/services/on-grid" class="px-4 py-2 font-bold uppercase hover:bg-solar-yellow hover:translate-x-2 transition-transform">Solar On Grid</a>
                                 <a href="/services/off-grid" class="px-4 py-2 font-bold uppercase hover:bg-solar-yellow hover:translate-x-2 transition-transform">Solar Off Grid</a>
