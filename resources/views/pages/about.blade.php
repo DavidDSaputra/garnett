@@ -109,22 +109,33 @@
         </div>
     </section>
 
-    <!-- Team Members -->
-    <section class="py-24 bg-white">
+    <!-- Solar Industry Gallery -->
+    <section class="py-24 bg-white relative">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-5xl font-black uppercase mb-16" data-aos="fade-up">Sang <span class="bg-solar-yellow px-2 inline-block border-4 border-slate-dark transform rotate-1 shadow-brutal">Pelopor</span></h2>
+            <h2 class="text-5xl font-black uppercase mb-16 text-center" data-aos="fade-up">Integritas <span class="bg-solar-yellow px-2 inline-block border-4 border-slate-dark transform rotate-1 shadow-brutal">Instalasi</span></h2>
             
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-                @for($i = 1; $i <= 4; $i++)
-                <div class="group cursor-pointer" data-aos="zoom-in" data-aos-delay="{{ $i * 100 }}">
-                    <div class="w-full aspect-[3/4] border-4 border-slate-dark bg-slate-200 mb-6 overflow-hidden relative shadow-brutal hover:translate-y-2 hover:shadow-none transition-all duration-300 filter grayscale hover:grayscale-0">
-                        <img src="https://images.unsplash.com/photo-15{{ 30000000000 + $i }}?q=80&w=600&auto=format&fit=crop" onerror="this.src='https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=600&auto=format&fit=crop'" alt="Team Member" class="w-full h-full object-cover">
-                        <div class="absolute inset-0 bg-solar-yellow mix-blend-multiply opacity-0 group-hover:opacity-40 transition-opacity"></div>
-                    </div>
-                    <h3 class="text-2xl font-black uppercase">Insinyur {{ $i }}</h3>
-                    <p class="text-eco-green font-bold uppercase tracking-widest text-sm">Kepala Instalasi Sistem</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Image 1 -->
+                <div class="border-4 border-slate-dark shadow-brutal hover:translate-x-2 transition-transform duration-300 group overflow-hidden" data-aos="zoom-in" data-aos-delay="0">
+                    <img src="https://images.unsplash.com/photo-1548614606-52b4451f994b?q=80&w=800&auto=format&fit=crop" alt="Pekerja Instalasi Solar Panel" class="w-full h-80 object-cover filter grayscale group-hover:grayscale-0 transition-all duration-500 transform group-hover:scale-105">
                 </div>
-                @endfor
+                <!-- Image 2 -->
+                <div class="border-4 border-slate-dark shadow-brutal hover:-translate-y-2 transition-transform duration-300 group overflow-hidden md:col-span-2 lg:col-span-1" data-aos="zoom-in" data-aos-delay="100">
+                    <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=800&auto=format&fit=crop" alt="Deretan Solar Panel Industri" class="w-full h-80 object-cover filter grayscale group-hover:grayscale-0 transition-all duration-500 transform group-hover:scale-105">
+                </div>
+                <!-- Image 3 -->
+                <div class="border-4 border-slate-dark shadow-brutal hover:translate-x-2 transition-transform duration-300 group overflow-hidden" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="https://images.unsplash.com/photo-1497440001374-f26997328c1b?q=80&w=800&auto=format&fit=crop" alt="Stasiun Energi Surya" class="w-full h-80 object-cover filter grayscale group-hover:grayscale-0 transition-all duration-500 transform group-hover:scale-105">
+                </div>
+                <!-- Image 4 -->
+                <div class="border-4 border-slate-dark shadow-brutal hover:-translate-y-2 transition-transform duration-300 group overflow-hidden lg:col-span-2" data-aos="zoom-in" data-aos-delay="300">
+                    <img src="https://images.unsplash.com/photo-1613665813446-82a78c468a1d?q=80&w=1200&auto=format&fit=crop" alt="Teknisi Memeriksa Panel Surya" class="w-full h-96 object-cover filter grayscale group-hover:grayscale-0 transition-all duration-500 transform group-hover:scale-105">
+                </div>
+                <!-- Info Box -->
+                <div class="border-8 border-slate-dark bg-eco-green text-white p-8 flex flex-col justify-center shadow-brutal-lg transform -rotate-1 hover:rotate-0 transition-transform duration-300" data-aos="fade-up" data-aos-delay="400">
+                    <h3 class="text-3xl font-black uppercase mb-4">Presisi Mutlak</h3>
+                    <p class="text-lg font-bold">Setiap modul terpasang melalui inspeksi ketat dan kalibrasi presisi untuk memastikan performa puncak tanpa kompromi.</p>
+                </div>
             </div>
         </div>
     </section>
