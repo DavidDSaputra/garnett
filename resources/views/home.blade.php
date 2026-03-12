@@ -87,92 +87,213 @@
         </div>
     </section>
 
-    <!-- 6 Core Solutions Section -->
-    <section class="py-16 md:py-24 bg-slate-dark text-white relative border-y-8 border-solar-yellow">
+    <!-- 6 Core Solutions Section (Interactive Accordion) -->
+    <section class="py-16 md:py-24 bg-slate-dark text-white relative border-y-8 border-solar-yellow" id="solutions" x-data="{ active: 1 }">
         <!-- Decoration -->
         <div class="absolute top-0 right-0 w-64 h-64 bg-eco-green rounded-full blur-[100px] opacity-20 pointer-events-none"></div>
 
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div class="mb-16" data-aos="fade-up">
-                <span class="inline-block border-2 border-white bg-transparent text-white font-black px-4 py-1 text-sm uppercase tracking-widest mb-4">6 Pilar Utama</span>
-                <h2 class="text-4xl md:text-6xl lg:text-7xl font-black uppercase leading-none tracking-tight mb-6">Sistem <span class="text-solar-yellow">Energi</span><br class="hidden md:block">Komprehensif.</h2>
-                <p class="text-xl font-medium text-slate-300 max-w-3xl">Kami menyediakan enam pilar solusi energi terbarukan yang dirancang secara brutal untuk menjawab setiap tantangan kelistrikan, dari perumahan hingga skala industri berat.</p>
+            <div class="mb-16 text-center md:text-left" data-aos="fade-up">
+                <span class="inline-block border-2 border-solar-yellow text-solar-yellow font-black px-4 py-1 text-sm uppercase tracking-widest mb-4">Infrastruktur Inti</span>
+                <h2 class="text-4xl md:text-6xl lg:text-7xl font-black uppercase leading-[1.1] tracking-tight mb-6">Sistem <span class="bg-solar-yellow text-slate-dark px-2 shadow-brutal-sm inline-block -rotate-2">Energi</span><br class="hidden md:block">Komprehensif.</h2>
+                <p class="text-xl font-medium text-slate-300 max-w-3xl md:mx-0 mx-auto">Kami menyediakan enam pilar solusi energi terbarukan yang dirancang secara presisi. Jelajahi spesifikasi teknis dari setiap arsitektur di bawah ini.</p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- 1. On-Grid -->
-                <div class="bg-white border-4 border-slate-dark p-8 group hover:-translate-y-2 transition-transform shadow-[8px_8px_0px_0px_#FDB813]" data-aos="fade-up" data-aos-delay="0">
-                    <div class="w-16 h-16 bg-slate-dark text-solar-yellow flex items-center justify-center border-4 border-slate-dark mb-6">
-                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="square" stroke-linejoin="miter" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
-                    </div>
-                    <h3 class="text-3xl font-black uppercase mb-4 text-slate-dark">Solar<br>On-Grid</h3>
-                    <p class="text-slate-600 font-medium mb-6">Sistem solar terhubung jaringan. Mengimbangi tagihan listrik dan memberikan ROI langsung tanpa baterai. Ideal untuk area dengan listrik PLN yang stabil.</p>
-                    <a href="/services/on-grid" class="inline-flex items-center text-slate-dark font-black uppercase tracking-widest group-hover:text-eco-green transition-colors border-b-2 border-slate-dark pb-1">
-                        Pelajari <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="square" stroke-linejoin="miter" stroke-width="3" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
-                    </a>
+            <!-- Interactive Layout -->
+            <div class="flex flex-col lg:flex-row gap-8 lg:gap-12 lg:h-[600px]">
+                
+                <!-- Left: Navigation Tabs / Accordion Headers -->
+                <div class="w-full lg:w-1/3 flex flex-col gap-4 overflow-y-auto pr-2 custom-scrollbar">
+                    
+                    <!-- Tab 1: On-Grid -->
+                    <button @click="active = 1" 
+                            class="text-left w-full border-4 p-6 transition-all duration-300 flex items-center justify-between group"
+                            :class="active === 1 ? 'border-solar-yellow bg-solar-yellow text-slate-dark shadow-brutal scale-105 z-10' : 'border-slate-600 bg-transparent text-slate-400 hover:border-slate-400 hover:text-white'">
+                        <div class="flex items-center gap-4">
+                            <span class="font-black text-2xl" :class="active === 1 ? 'text-slate-dark' : 'text-slate-600'">01</span>
+                            <h3 class="text-2xl font-black uppercase tracking-wide">On-Grid</h3>
+                        </div>
+                        <svg class="w-6 h-6 transform transition-transform" :class="active === 1 ? 'rotate-90' : 'group-hover:translate-x-2'" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="square" stroke-linejoin="miter" stroke-width="3" d="M9 5l7 7-7 7"></path></svg>
+                    </button>
+
+                    <!-- Tab 2: Off-Grid -->
+                    <button @click="active = 2" 
+                            class="text-left w-full border-4 p-6 transition-all duration-300 flex items-center justify-between group"
+                            :class="active === 2 ? 'border-eco-green bg-eco-green text-white shadow-[8px_8px_0px_0px_#FDB813] scale-105 z-10' : 'border-slate-600 bg-transparent text-slate-400 hover:border-slate-400 hover:text-white'">
+                        <div class="flex items-center gap-4">
+                            <span class="font-black text-2xl" :class="active === 2 ? 'opacity-50' : 'text-slate-600'">02</span>
+                            <h3 class="text-2xl font-black uppercase tracking-wide">Off-Grid</h3>
+                        </div>
+                        <svg class="w-6 h-6 transform transition-transform" :class="active === 2 ? 'rotate-90' : 'group-hover:translate-x-2'" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="square" stroke-linejoin="miter" stroke-width="3" d="M9 5l7 7-7 7"></path></svg>
+                    </button>
+
+                    <!-- Tab 3: Hybrid -->
+                    <button @click="active = 3" 
+                            class="text-left w-full border-4 p-6 transition-all duration-300 flex items-center justify-between group"
+                            :class="active === 3 ? 'border-white bg-white text-slate-dark shadow-brutal scale-105 z-10' : 'border-slate-600 bg-transparent text-slate-400 hover:border-slate-400 hover:text-white'">
+                        <div class="flex items-center gap-4">
+                            <span class="font-black text-2xl" :class="active === 3 ? 'text-slate-400' : 'text-slate-600'">03</span>
+                            <h3 class="text-2xl font-black uppercase tracking-wide">Hybrid</h3>
+                        </div>
+                        <svg class="w-6 h-6 transform transition-transform" :class="active === 3 ? 'rotate-90' : 'group-hover:translate-x-2'" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="square" stroke-linejoin="miter" stroke-width="3" d="M9 5l7 7-7 7"></path></svg>
+                    </button>
+
+                    <!-- Tab 4: EV Charging -->
+                    <button @click="active = 4" 
+                            class="text-left w-full border-4 p-6 transition-all duration-300 flex items-center justify-between group"
+                            :class="active === 4 ? 'border-[#3B82F6] bg-[#3B82F6] text-white shadow-brutal scale-105 z-10' : 'border-slate-600 bg-transparent text-slate-400 hover:border-slate-400 hover:text-white'">
+                        <div class="flex items-center gap-4">
+                            <span class="font-black text-2xl" :class="active === 4 ? 'opacity-50' : 'text-slate-600'">04</span>
+                            <h3 class="text-2xl font-black uppercase tracking-wide">Charger EV</h3>
+                        </div>
+                        <svg class="w-6 h-6 transform transition-transform" :class="active === 4 ? 'rotate-90' : 'group-hover:translate-x-2'" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="square" stroke-linejoin="miter" stroke-width="3" d="M9 5l7 7-7 7"></path></svg>
+                    </button>
+
+                    <!-- Tab 5: PJUTS -->
+                    <button @click="active = 5" 
+                            class="text-left w-full border-4 p-6 transition-all duration-300 flex items-center justify-between group"
+                            :class="active === 5 ? 'border-solar-yellow bg-transparent text-solar-yellow shadow-[4px_4px_0px_0px_#FDB813] scale-105 z-10' : 'border-slate-600 bg-transparent text-slate-400 hover:border-slate-400 hover:text-white'">
+                        <div class="flex items-center gap-4">
+                            <span class="font-black text-2xl" :class="active === 5 ? 'opacity-50' : 'text-slate-600'">05</span>
+                            <h3 class="text-2xl font-black uppercase tracking-wide">PJUTS</h3>
+                        </div>
+                        <svg class="w-6 h-6 transform transition-transform" :class="active === 5 ? 'rotate-90' : 'group-hover:translate-x-2'" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="square" stroke-linejoin="miter" stroke-width="3" d="M9 5l7 7-7 7"></path></svg>
+                    </button>
+
+                    <!-- Tab 6: Industrial -->
+                    <button @click="active = 6" 
+                            class="text-left w-full border-4 p-6 transition-all duration-300 flex items-center justify-between group"
+                            :class="active === 6 ? 'border-slate-400 bg-slate-800 text-white shadow-brutal scale-105 z-10' : 'border-slate-600 bg-transparent text-slate-400 hover:border-slate-400 hover:text-white'">
+                        <div class="flex items-center gap-4">
+                            <span class="font-black text-2xl" :class="active === 6 ? 'text-slate-500' : 'text-slate-600'">06</span>
+                            <h3 class="text-2xl font-black uppercase tracking-wide">Industri</h3>
+                        </div>
+                        <svg class="w-6 h-6 transform transition-transform" :class="active === 6 ? 'rotate-90' : 'group-hover:translate-x-2'" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="square" stroke-linejoin="miter" stroke-width="3" d="M9 5l7 7-7 7"></path></svg>
+                    </button>
+
                 </div>
 
-                <!-- 2. Off-Grid -->
-                <div class="bg-white border-4 border-slate-dark p-8 group hover:-translate-y-2 transition-transform shadow-[8px_8px_0px_0px_#1F7A63]" data-aos="fade-up" data-aos-delay="100">
-                    <div class="w-16 h-16 bg-slate-dark text-eco-green flex items-center justify-center border-4 border-slate-dark mb-6">
-                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="square" stroke-linejoin="miter" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path></svg>
+                <!-- Right: Content Display Area -->
+                <div class="w-full lg:w-2/3 border-8 border-slate-600 bg-slate-900 p-8 md:p-12 relative overflow-hidden flex flex-col justify-center min-h-[500px]">
+                    <!-- Ambient Backgrounds -->
+                    <div class="absolute inset-0 opacity-10 pointer-events-none" style="background-image: radial-gradient(circle at 2px 2px, white 1px, transparent 0); background-size: 32px 32px;"></div>
+                    
+                    <!-- Content 1: On-Grid -->
+                    <div x-show="active === 1" x-transition.opacity.duration.500ms class="h-full flex flex-col justify-between" style="display: none;">
+                        <div class="flex flex-col md:flex-row gap-8 items-start mb-8">
+                            <div class="flex-1">
+                                <h3 class="text-4xl md:text-5xl font-black uppercase text-solar-yellow leading-none mb-6">On-Grid System</h3>
+                                <p class="text-xl font-medium text-slate-300 leading-relaxed max-w-xl">
+                                    Infrastruktur surya teringan dengan ROI gila-gilaan. Terintegrasi erat dengan PLN melalui *Net-Metering*. Menekan biaya overhead siang hari menjadi nol tanpa investasi baterai.
+                                </p>
+                            </div>
+                            <div class="w-full md:w-1/2 border-4 border-solar-yellow bg-white p-2 shrink-0 transform rotate-1">
+                                <img src="{{ asset('images/cara-kerja-on-grid.jpg') }}" alt="On Grid Diagram" class="w-full h-auto object-contain">
+                            </div>
+                        </div>
+                        <a href="/services/on-grid" class="brutal-btn self-start mt-auto">Spesifikasi On-Grid</a>
                     </div>
-                    <h3 class="text-3xl font-black uppercase mb-4 text-slate-dark">Solar<br>Off-Grid</h3>
-                    <p class="text-slate-600 font-medium mb-6">Kemandirian energi absolut. Sistem terpisah dari jaringan listrik utama, menggunakan baterai berkapasitas tinggi untuk daya 24 jam nonstop di lokasi terpencil.</p>
-                    <a href="/services/off-grid" class="inline-flex items-center text-slate-dark font-black uppercase tracking-widest group-hover:text-eco-green transition-colors border-b-2 border-slate-dark pb-1">
-                        Pelajari <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="square" stroke-linejoin="miter" stroke-width="3" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
-                    </a>
+
+                    <!-- Content 2: Off-Grid -->
+                    <div x-show="active === 2" x-transition.opacity.duration.500ms class="h-full flex flex-col justify-between" style="display: none;">
+                        <div class="flex flex-col md:flex-row gap-8 items-start mb-8">
+                            <div class="flex-1">
+                                <h3 class="text-4xl md:text-5xl font-black uppercase text-eco-green leading-none mb-6">Off-Grid System</h3>
+                                <p class="text-xl font-medium text-slate-300 leading-relaxed max-w-xl">
+                                    Kemandirian energi absolut di area tak terjangkau utilitas. Dibangun dengan susunan baterai lithium industri tugas berat untuk memastikan pasokan listrik 24/7 di kondisi ekstrem.
+                                </p>
+                            </div>
+                            <div class="w-full md:w-1/2 border-4 border-eco-green bg-white p-2 shrink-0 transform -rotate-1">
+                                <img src="{{ asset('images/cara-kerja-off-grid.jpg') }}" alt="Off Grid Diagram" class="w-full h-auto object-contain">
+                            </div>
+                        </div>
+                        <a href="/services/off-grid" class="brutal-btn-alt border-eco-green text-eco-green hover:bg-eco-green hover:text-white self-start mt-auto">Opsi Baterai</a>
+                    </div>
+
+                    <!-- Content 3: Hybrid -->
+                    <div x-show="active === 3" x-transition.opacity.duration.500ms class="h-full flex flex-col justify-between" style="display: none;">
+                        <div class="flex flex-col md:flex-row gap-8 items-start mb-8">
+                            <div class="flex-1">
+                                <h3 class="text-4xl md:text-5xl font-black uppercase text-white leading-none mb-6">Hybrid Architecture</h3>
+                                <p class="text-xl font-medium text-slate-300 leading-relaxed max-w-xl">
+                                    Konfigurasi kompromi nihil. Gabungan penghematan tagihan PLN di siang hari dan anti-pemadaman (UPS instan) di malam hari berkat unit *smart battery storage*.
+                                </p>
+                            </div>
+                            <div class="w-full md:w-1/2 border-4 border-white bg-white p-2 shrink-0">
+                                <img src="{{ asset('images/cara-kerja-hybrid.jpg') }}" alt="Hybrid Diagram" class="w-full h-auto object-contain">
+                            </div>
+                        </div>
+                        <a href="/services/hybrid" class="bg-white text-slate-dark border-4 border-white font-black uppercase px-8 py-3 text-lg hover:bg-transparent hover:text-white transition-colors self-start mt-auto">Arsitektur Hybrid</a>
+                    </div>
+
+                    <!-- Content 4: EV Charging -->
+                    <div x-show="active === 4" x-transition.opacity.duration.500ms class="h-full flex flex-col justify-between" style="display: none;">
+                        <div class="flex flex-col md:flex-row gap-8 items-start mb-8">
+                            <div class="flex-1">
+                                <h3 class="text-4xl md:text-5xl font-black uppercase text-[#3B82F6] leading-none mb-6">E.V. Charging</h3>
+                                <p class="text-xl font-medium text-slate-300 leading-relaxed max-w-xl">
+                                    Fasilitas komersial stasiun pengisian kendaraan listrik cerdas terhubung inverter surya. Memompa mobil EV dengan 100% daya bebas emisi langsung dari matahari.
+                                </p>
+                            </div>
+                            <div class="w-full md:w-1/2 border-4 border-[#3B82F6] bg-white p-2 shrink-0 transform rotate-2">
+                                <img src="{{ asset('images/cara-kerja-ev.jpg') }}" alt="EV Diagram" class="w-full h-auto object-contain">
+                            </div>
+                        </div>
+                        <a href="/services/ev-charging" class="bg-[#3B82F6] text-white border-4 border-[#3B82F6] font-black uppercase px-8 py-3 text-lg hover:bg-transparent transition-colors self-start mt-auto">Infrastruktur Charger</a>
+                    </div>
+
+                    <!-- Content 5: PJUTS -->
+                    <div x-show="active === 5" x-transition.opacity.duration.500ms class="h-full flex flex-col justify-between" style="display: none;">
+                        <div class="flex flex-col md:flex-row gap-8 items-start mb-8">
+                            <div class="flex-1">
+                                <h3 class="text-4xl md:text-5xl font-black uppercase text-solar-yellow leading-none mb-6"><span class="text-transparent" style="-webkit-text-stroke: 1px currentColor;">Smart</span><br>PJUTS</h3>
+                                <p class="text-xl font-medium text-slate-300 leading-relaxed max-w-xl">
+                                    Penerangan Jalan Umum Tenaga Surya tangguh cuaca. Lampu mandiri yang otomatis memanajemen daya untuk memastikan jalanan terang benderang dari magrib hingga fajar menyingsing.
+                                </p>
+                            </div>
+                            <div class="w-full md:w-1/2 border-4 border-solar-yellow bg-slate-800 p-2 shrink-0">
+                                <img src="{{ asset('images/cara-kerja-pjuts.png') }}" alt="PJUTS Diagram" class="w-full h-auto object-contain" style="filter: brightness(1.2);">
+                            </div>
+                        </div>
+                        <a href="/services/pjuts" class="brutal-btn self-start mt-auto text-sm">Lihat Tiang & Lensa</a>
+                    </div>
+
+                    <!-- Content 6: Industrial -->
+                    <div x-show="active === 6" x-transition.opacity.duration.500ms class="h-full flex flex-col justify-between" style="display: none;">
+                        <div class="flex flex-col md:flex-row gap-8 items-start mb-8">
+                            <div class="flex-1">
+                                <h3 class="text-4xl md:text-5xl font-black uppercase text-slate-300 leading-none mb-6">Skala Industri</h3>
+                                <p class="text-xl font-medium text-slate-300 leading-relaxed max-w-xl">
+                                    Desain masif bentangan panel surya kelas atas khusus pabrik & manufaktur berat. Dirancang ber-megawatt untuk menghabisi porsi terbesar biaya listrik produksi tahunan.
+                                </p>
+                            </div>
+                            <div class="w-full md:w-1/2 border-4 border-slate-500 bg-white shrink-0 overflow-hidden transform -rotate-2">
+                                <img src="{{ asset('images/solar2.png') }}" alt="Industrial Solar" class="w-full h-48 object-cover">
+                            </div>
+                        </div>
+                        <a href="/services/industrial" class="bg-transparent border-4 border-slate-400 text-slate-200 font-black uppercase px-8 py-3 text-lg hover:bg-slate-400 hover:text-slate-900 transition-colors self-start mt-auto">Rancangan Megawatt</a>
+                    </div>
                 </div>
 
-                <!-- 3. Hybrid -->
-                <div class="bg-white border-4 border-slate-dark p-8 group hover:-translate-y-2 transition-transform shadow-[8px_8px_0px_0px_#FFFFFF]" data-aos="fade-up" data-aos-delay="200">
-                    <div class="w-16 h-16 bg-slate-dark text-white flex items-center justify-center border-4 border-slate-dark mb-6">
-                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="square" stroke-linejoin="miter" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg>
-                    </div>
-                    <h3 class="text-3xl font-black uppercase mb-4 text-slate-dark">Solar<br>Hybrid</h3>
-                    <p class="text-slate-600 font-medium mb-6">Dua keunggulan dalam satu. Kurangi tagihan dengan daya dari PLN, dengan baterai cadangan cerdas untuk terus menyala saat terjadi pemadaman.</p>
-                    <a href="/services/hybrid" class="inline-flex items-center text-slate-dark font-black uppercase tracking-widest group-hover:text-eco-green transition-colors border-b-2 border-slate-dark pb-1">
-                        Pelajari <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="square" stroke-linejoin="miter" stroke-width="3" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
-                    </a>
-                </div>
-
-                <!-- 4. EV Charging -->
-                <div class="bg-white border-4 border-slate-dark p-8 group hover:-translate-y-2 transition-transform shadow-[8px_8px_0px_0px_#FDB813]" data-aos="fade-up" data-aos-delay="300">
-                    <div class="w-16 h-16 bg-slate-dark text-solar-yellow flex items-center justify-center border-4 border-slate-dark mb-6">
-                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="square" stroke-linejoin="miter" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
-                    </div>
-                    <h3 class="text-3xl font-black uppercase mb-4 text-slate-dark">Pengisian<br>EV</h3>
-                    <p class="text-slate-600 font-medium mb-6">Stasiun pengisian mobil listrik komersial berkecepatan tinggi yang terintegrasi surya, memaksimalkan surplus daya bersih untuk mobilitas masa depan.</p>
-                    <a href="/services/ev-charging" class="inline-flex items-center text-slate-dark font-black uppercase tracking-widest group-hover:text-eco-green transition-colors border-b-2 border-slate-dark pb-1">
-                        Pelajari <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="square" stroke-linejoin="miter" stroke-width="3" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
-                    </a>
-                </div>
-
-                <!-- 5. PJUTS -->
-                <div class="bg-white border-4 border-slate-dark p-8 group hover:-translate-y-2 transition-transform shadow-[8px_8px_0px_0px_#1F7A63]" data-aos="fade-up" data-aos-delay="400">
-                    <div class="w-16 h-16 bg-slate-dark text-eco-green flex items-center justify-center border-4 border-slate-dark mb-6">
-                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="square" stroke-linejoin="miter" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path></svg>
-                    </div>
-                    <h3 class="text-3xl font-black uppercase mb-4 text-slate-dark">Penerangan<br>PJUTS</h3>
-                    <p class="text-slate-600 font-medium mb-6">Penerangan Jalan Umum bertenaga surya. Komponen standar tinggi untuk bertahan di cuaca ekstrem dengan visibilitas sempurna malam ke malam.</p>
-                    <a href="/services/pjuts" class="inline-flex items-center text-slate-dark font-black uppercase tracking-widest group-hover:text-eco-green transition-colors border-b-2 border-slate-dark pb-1">
-                        Pelajari <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="square" stroke-linejoin="miter" stroke-width="3" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
-                    </a>
-                </div>
-
-                <!-- 6. Industrial -->
-                <div class="bg-white border-4 border-slate-dark p-8 group hover:-translate-y-2 transition-transform shadow-[8px_8px_0px_0px_#FFFFFF]" data-aos="fade-up" data-aos-delay="500">
-                    <div class="w-16 h-16 bg-slate-dark text-white flex items-center justify-center border-4 border-slate-dark mb-6">
-                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="square" stroke-linejoin="miter" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
-                    </div>
-                    <h3 class="text-3xl font-black uppercase mb-4 text-slate-dark">Sistem<br>Industri</h3>
-                    <p class="text-slate-600 font-medium mb-6">Pembangkit tenaga surya kapasitas raksasa (megawatt) khusus untuk manufter dan pabrik guna menekan biaya overhead kelistrikan secara masif.</p>
-                    <a href="/services/industrial" class="inline-flex items-center text-slate-dark font-black uppercase tracking-widest group-hover:text-eco-green transition-colors border-b-2 border-slate-dark pb-1">
-                        Pelajari <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="square" stroke-linejoin="miter" stroke-width="3" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
-                    </a>
-                </div>
             </div>
         </div>
+        
+        <style>
+            .custom-scrollbar::-webkit-scrollbar {
+                width: 8px;
+            }
+            .custom-scrollbar::-webkit-scrollbar-track {
+                background: #1e293b;
+                border-radius: 0;
+            }
+            .custom-scrollbar::-webkit-scrollbar-thumb {
+                background: #475569;
+                border: 2px solid #1e293b;
+            }
+            .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+                background: #fdb813;
+            }
+        </style>
     </section>
 
     <!-- Solar Benefits Section -->
