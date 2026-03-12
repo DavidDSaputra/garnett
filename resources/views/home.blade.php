@@ -179,99 +179,111 @@
                     <div class="absolute inset-0 opacity-10 pointer-events-none" style="background-image: radial-gradient(circle at 2px 2px, white 1px, transparent 0); background-size: 32px 32px;"></div>
                     
                     <!-- Content 1: On-Grid -->
-                    <div x-show="active === 1" x-transition.opacity.duration.500ms class="h-full flex flex-col justify-between" style="display: none;">
-                        <div class="flex flex-col md:flex-row gap-8 items-start mb-8">
-                            <div class="flex-1">
+                    <div x-show="active === 1" x-transition.opacity.duration.500ms class="h-full flex flex-col" style="display: none;">
+                        <div class="flex flex-col lg:flex-row gap-8 items-center flex-grow mb-8 max-h-full">
+                            <div class="w-full lg:w-1/2">
                                 <h3 class="text-4xl md:text-5xl font-black uppercase text-solar-yellow leading-none mb-6">On-Grid System</h3>
-                                <p class="text-xl font-medium text-slate-300 leading-relaxed max-w-xl">
+                                <p class="text-lg md:text-xl font-medium text-slate-300 leading-relaxed">
                                     Infrastruktur surya teringan dengan ROI gila-gilaan. Terintegrasi erat dengan PLN melalui *Net-Metering*. Menekan biaya overhead siang hari menjadi nol tanpa investasi baterai.
                                 </p>
                             </div>
-                            <div class="w-full md:w-1/2 border-4 border-solar-yellow bg-white p-2 shrink-0 transform rotate-1">
-                                <img src="{{ asset('images/cara-kerja-on-grid.jpg') }}" alt="On Grid Diagram" class="w-full h-auto object-contain">
+                            <div class="w-full lg:w-1/2 flex items-center justify-center p-2 mt-4 lg:mt-0 max-h-[250px] lg:max-h-[400px]">
+                                <div class="border-4 border-solar-yellow bg-white p-2 transform rotate-1 w-full h-full">
+                                    <img src="{{ asset('images/cara-kerja-on-grid.jpg') }}" alt="On Grid Diagram" class="w-full h-full object-contain max-h-[230px] lg:max-h-[380px]">
+                                </div>
                             </div>
                         </div>
-                        <a href="/services/on-grid" class="brutal-btn self-start mt-auto">Spesifikasi On-Grid</a>
+                        <a href="/services/on-grid" class="brutal-btn self-start shrink-0 mt-auto">Spesifikasi On-Grid</a>
                     </div>
 
                     <!-- Content 2: Off-Grid -->
-                    <div x-show="active === 2" x-transition.opacity.duration.500ms class="h-full flex flex-col justify-between" style="display: none;">
-                        <div class="flex flex-col md:flex-row gap-8 items-start mb-8">
-                            <div class="flex-1">
+                    <div x-show="active === 2" x-transition.opacity.duration.500ms class="h-full flex flex-col" style="display: none;">
+                        <div class="flex flex-col lg:flex-row gap-8 items-center flex-grow mb-8 max-h-full">
+                            <div class="w-full lg:w-1/2">
                                 <h3 class="text-4xl md:text-5xl font-black uppercase text-eco-green leading-none mb-6">Off-Grid System</h3>
-                                <p class="text-xl font-medium text-slate-300 leading-relaxed max-w-xl">
+                                <p class="text-lg md:text-xl font-medium text-slate-300 leading-relaxed">
                                     Kemandirian energi absolut di area tak terjangkau utilitas. Dibangun dengan susunan baterai lithium industri tugas berat untuk memastikan pasokan listrik 24/7 di kondisi ekstrem.
                                 </p>
                             </div>
-                            <div class="w-full md:w-1/2 border-4 border-eco-green bg-white p-2 shrink-0 transform -rotate-1">
-                                <img src="{{ asset('images/cara-kerja-off-grid.jpg') }}" alt="Off Grid Diagram" class="w-full h-auto object-contain">
+                            <div class="w-full lg:w-1/2 flex items-center justify-center p-2 mt-4 lg:mt-0 max-h-[250px] lg:max-h-[400px]">
+                                <div class="border-4 border-eco-green bg-white p-2 transform -rotate-1 w-full h-full">
+                                    <img src="{{ asset('images/cara-kerja-off-grid.jpg') }}" alt="Off Grid Diagram" class="w-full h-full object-contain max-h-[230px] lg:max-h-[380px]">
+                                </div>
                             </div>
                         </div>
-                        <a href="/services/off-grid" class="brutal-btn-alt border-eco-green text-eco-green hover:bg-eco-green hover:text-white self-start mt-auto">Opsi Baterai</a>
+                        <a href="/services/off-grid" class="brutal-btn-alt border-eco-green text-eco-green hover:bg-eco-green hover:text-white self-start shrink-0 mt-auto">Opsi Baterai</a>
                     </div>
 
                     <!-- Content 3: Hybrid -->
-                    <div x-show="active === 3" x-transition.opacity.duration.500ms class="h-full flex flex-col justify-between" style="display: none;">
-                        <div class="flex flex-col md:flex-row gap-8 items-start mb-8">
-                            <div class="flex-1">
+                    <div x-show="active === 3" x-transition.opacity.duration.500ms class="h-full flex flex-col" style="display: none;">
+                        <div class="flex flex-col lg:flex-row gap-8 items-center flex-grow mb-8 max-h-full">
+                            <div class="w-full lg:w-1/2">
                                 <h3 class="text-4xl md:text-5xl font-black uppercase text-white leading-none mb-6">Hybrid Architecture</h3>
-                                <p class="text-xl font-medium text-slate-300 leading-relaxed max-w-xl">
+                                <p class="text-lg md:text-xl font-medium text-slate-300 leading-relaxed">
                                     Konfigurasi kompromi nihil. Gabungan penghematan tagihan PLN di siang hari dan anti-pemadaman (UPS instan) di malam hari berkat unit *smart battery storage*.
                                 </p>
                             </div>
-                            <div class="w-full md:w-1/2 border-4 border-white bg-white p-2 shrink-0">
-                                <img src="{{ asset('images/cara-kerja-hybrid.jpg') }}" alt="Hybrid Diagram" class="w-full h-auto object-contain">
+                            <div class="w-full lg:w-1/2 flex items-center justify-center p-2 mt-4 lg:mt-0 max-h-[250px] lg:max-h-[400px]">
+                                <div class="border-4 border-white bg-white p-2 w-full h-full">
+                                    <img src="{{ asset('images/cara-kerja-hybrid.jpg') }}" alt="Hybrid Diagram" class="w-full h-full object-contain max-h-[230px] lg:max-h-[380px]">
+                                </div>
                             </div>
                         </div>
-                        <a href="/services/hybrid" class="bg-white text-slate-dark border-4 border-white font-black uppercase px-8 py-3 text-lg hover:bg-transparent hover:text-white transition-colors self-start mt-auto">Arsitektur Hybrid</a>
+                        <a href="/services/hybrid" class="bg-white text-slate-dark border-4 border-white font-black uppercase px-8 py-3 text-lg hover:bg-transparent hover:text-white transition-colors self-start shrink-0 mt-auto">Arsitektur Hybrid</a>
                     </div>
 
                     <!-- Content 4: EV Charging -->
-                    <div x-show="active === 4" x-transition.opacity.duration.500ms class="h-full flex flex-col justify-between" style="display: none;">
-                        <div class="flex flex-col md:flex-row gap-8 items-start mb-8">
-                            <div class="flex-1">
+                    <div x-show="active === 4" x-transition.opacity.duration.500ms class="h-full flex flex-col" style="display: none;">
+                        <div class="flex flex-col lg:flex-row gap-8 items-center flex-grow mb-8 max-h-full">
+                            <div class="w-full lg:w-1/2">
                                 <h3 class="text-4xl md:text-5xl font-black uppercase text-[#3B82F6] leading-none mb-6">E.V. Charging</h3>
-                                <p class="text-xl font-medium text-slate-300 leading-relaxed max-w-xl">
+                                <p class="text-lg md:text-xl font-medium text-slate-300 leading-relaxed">
                                     Fasilitas komersial stasiun pengisian kendaraan listrik cerdas terhubung inverter surya. Memompa mobil EV dengan 100% daya bebas emisi langsung dari matahari.
                                 </p>
                             </div>
-                            <div class="w-full md:w-1/2 border-4 border-[#3B82F6] bg-white p-2 shrink-0 transform rotate-2">
-                                <img src="{{ asset('images/cara-kerja-ev.jpg') }}" alt="EV Diagram" class="w-full h-auto object-contain">
+                            <div class="w-full lg:w-1/2 flex items-center justify-center p-2 mt-4 lg:mt-0 max-h-[250px] lg:max-h-[400px]">
+                                <div class="border-4 border-[#3B82F6] bg-white p-2 transform rotate-2 w-full h-full">
+                                    <img src="{{ asset('images/cara-kerja-ev.jpg') }}" alt="EV Diagram" class="w-full h-full object-contain max-h-[230px] lg:max-h-[380px]">
+                                </div>
                             </div>
                         </div>
-                        <a href="/services/ev-charging" class="bg-[#3B82F6] text-white border-4 border-[#3B82F6] font-black uppercase px-8 py-3 text-lg hover:bg-transparent transition-colors self-start mt-auto">Infrastruktur Charger</a>
+                        <a href="/services/ev-charging" class="bg-[#3B82F6] text-white border-4 border-[#3B82F6] font-black uppercase px-8 py-3 text-lg hover:bg-transparent transition-colors self-start shrink-0 mt-auto">Infrastruktur Charger</a>
                     </div>
 
                     <!-- Content 5: PJUTS -->
-                    <div x-show="active === 5" x-transition.opacity.duration.500ms class="h-full flex flex-col justify-between" style="display: none;">
-                        <div class="flex flex-col md:flex-row gap-8 items-start mb-8">
-                            <div class="flex-1">
+                    <div x-show="active === 5" x-transition.opacity.duration.500ms class="h-full flex flex-col" style="display: none;">
+                        <div class="flex flex-col lg:flex-row gap-8 items-center flex-grow mb-8 max-h-full">
+                            <div class="w-full lg:w-1/2">
                                 <h3 class="text-4xl md:text-5xl font-black uppercase text-solar-yellow leading-none mb-6"><span class="text-transparent" style="-webkit-text-stroke: 1px currentColor;">Smart</span><br>PJUTS</h3>
-                                <p class="text-xl font-medium text-slate-300 leading-relaxed max-w-xl">
+                                <p class="text-lg md:text-xl font-medium text-slate-300 leading-relaxed">
                                     Penerangan Jalan Umum Tenaga Surya tangguh cuaca. Lampu mandiri yang otomatis memanajemen daya untuk memastikan jalanan terang benderang dari magrib hingga fajar menyingsing.
                                 </p>
                             </div>
-                            <div class="w-full md:w-1/2 border-4 border-solar-yellow bg-slate-800 p-2 shrink-0">
-                                <img src="{{ asset('images/cara-kerja-pjuts.png') }}" alt="PJUTS Diagram" class="w-full h-auto object-contain" style="filter: brightness(1.2);">
+                            <div class="w-full lg:w-1/2 flex items-center justify-center p-2 mt-4 lg:mt-0 max-h-[250px] lg:max-h-[400px]">
+                                <div class="border-4 border-solar-yellow bg-slate-800 p-2 w-full h-full">
+                                    <img src="{{ asset('images/cara-kerja-pjuts.png') }}" alt="PJUTS Diagram" class="w-full h-full object-contain max-h-[230px] lg:max-h-[380px]" style="filter: brightness(1.2);">
+                                </div>
                             </div>
                         </div>
-                        <a href="/services/pjuts" class="brutal-btn self-start mt-auto text-sm">Lihat Tiang & Lensa</a>
+                        <a href="/services/pjuts" class="brutal-btn self-start shrink-0 mt-auto text-sm">Lihat Tiang & Lensa</a>
                     </div>
 
                     <!-- Content 6: Industrial -->
-                    <div x-show="active === 6" x-transition.opacity.duration.500ms class="h-full flex flex-col justify-between" style="display: none;">
-                        <div class="flex flex-col md:flex-row gap-8 items-start mb-8">
-                            <div class="flex-1">
+                    <div x-show="active === 6" x-transition.opacity.duration.500ms class="h-full flex flex-col" style="display: none;">
+                        <div class="flex flex-col lg:flex-row gap-8 items-center flex-grow mb-8 max-h-full">
+                            <div class="w-full lg:w-1/2">
                                 <h3 class="text-4xl md:text-5xl font-black uppercase text-slate-300 leading-none mb-6">Skala Industri</h3>
-                                <p class="text-xl font-medium text-slate-300 leading-relaxed max-w-xl">
+                                <p class="text-lg md:text-xl font-medium text-slate-300 leading-relaxed">
                                     Desain masif bentangan panel surya kelas atas khusus pabrik & manufaktur berat. Dirancang ber-megawatt untuk menghabisi porsi terbesar biaya listrik produksi tahunan.
                                 </p>
                             </div>
-                            <div class="w-full md:w-1/2 border-4 border-slate-500 bg-white shrink-0 overflow-hidden transform -rotate-2">
-                                <img src="{{ asset('images/solar2.png') }}" alt="Industrial Solar" class="w-full h-48 object-cover">
+                            <div class="w-full lg:w-1/2 flex items-center justify-center p-2 mt-4 lg:mt-0 max-h-[250px] lg:max-h-[400px]">
+                                <div class="border-4 border-slate-500 bg-white overflow-hidden transform -rotate-2 w-full h-full">
+                                    <img src="{{ asset('images/solar2.png') }}" alt="Industrial Solar" class="w-full h-full object-cover max-h-[230px] lg:max-h-[380px]">
+                                </div>
                             </div>
                         </div>
-                        <a href="/services/industrial" class="bg-transparent border-4 border-slate-400 text-slate-200 font-black uppercase px-8 py-3 text-lg hover:bg-slate-400 hover:text-slate-900 transition-colors self-start mt-auto">Rancangan Megawatt</a>
+                        <a href="/services/industrial" class="bg-transparent border-4 border-slate-400 text-slate-200 font-black uppercase px-8 py-3 text-lg hover:bg-slate-400 hover:text-slate-900 transition-colors self-start shrink-0 mt-auto">Rancangan Megawatt</a>
                     </div>
                 </div>
 
