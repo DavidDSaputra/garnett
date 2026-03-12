@@ -188,7 +188,7 @@
                                 </p>
                             </div>
                             <div class="w-full lg:w-1/2 flex items-center justify-center p-2 mt-4 lg:mt-0 max-h-[250px] lg:max-h-[400px]">
-                                <div class="border-4 border-solar-yellow bg-white p-2 transform rotate-1 w-full h-full group overflow-hidden group-hover:scale-105 transition-transform duration-500 hover:z-10 cursor-pointer shadow-brutal hover:shadow-brutal-lg">
+                                <div class="border-4 border-solar-yellow bg-white p-2 transform w-full h-full group overflow-hidden transition-all duration-500 hover:z-10 cursor-pointer shadow-brutal hover:shadow-brutal-lg hover:-translate-y-2 hover:scale-[1.03] rotate-1 hover:rotate-0">
                                     <img src="{{ asset('images/cara-kerja-on-grid.jpg') }}" alt="On Grid Diagram" class="w-full h-full object-contain max-h-[230px] lg:max-h-[380px]">
                                 </div>
                             </div>
@@ -206,7 +206,7 @@
                                 </p>
                             </div>
                             <div class="w-full lg:w-1/2 flex items-center justify-center p-2 mt-4 lg:mt-0 max-h-[250px] lg:max-h-[400px]">
-                                <div class="border-4 border-eco-green bg-white p-2 transform -rotate-1 w-full h-full group overflow-hidden group-hover:scale-105 transition-transform duration-500 hover:z-10 cursor-pointer shadow-[4px_4px_0px_0px_var(--color-slate-dark)] hover:shadow-[8px_8px_0px_0px_var(--color-slate-dark)]">
+                                <div class="border-4 border-eco-green bg-white p-2 transform w-full h-full group overflow-hidden transition-all duration-500 hover:z-10 cursor-pointer shadow-[4px_4px_0px_0px_var(--color-slate-dark)] hover:shadow-[8px_8px_0px_0px_var(--color-slate-dark)] hover:-translate-y-2 hover:scale-[1.03] -rotate-1 hover:rotate-0">
                                     <img src="{{ asset('images/cara-kerja-off-grid.jpg') }}" alt="Off Grid Diagram" class="w-full h-full object-contain max-h-[230px] lg:max-h-[380px]">
                                 </div>
                             </div>
@@ -224,7 +224,7 @@
                                 </p>
                             </div>
                             <div class="w-full lg:w-1/2 flex items-center justify-center p-2 mt-4 lg:mt-0 max-h-[250px] lg:max-h-[400px]">
-                                <div class="border-4 border-white bg-white p-2 w-full h-full group overflow-hidden group-hover:scale-105 transition-transform duration-500 hover:z-10 cursor-pointer shadow-[4px_4px_0px_0px_white] hover:shadow-[8px_8px_0px_0px_white]">
+                                <div class="border-4 border-white bg-white p-2 transform w-full h-full group overflow-hidden transition-all duration-500 hover:z-10 cursor-pointer shadow-[4px_4px_0px_0px_white] hover:shadow-[8px_8px_0px_0px_white] hover:-translate-y-2 hover:scale-[1.03]">
                                     <img src="{{ asset('images/cara-kerja-hybrid.jpg') }}" alt="Hybrid Diagram" class="w-full h-full object-contain max-h-[230px] lg:max-h-[380px]">
                                 </div>
                             </div>
@@ -242,7 +242,7 @@
                                 </p>
                             </div>
                             <div class="w-full lg:w-1/2 flex items-center justify-center p-2 mt-4 lg:mt-0 max-h-[250px] lg:max-h-[400px]">
-                                <div class="border-4 border-[#3B82F6] bg-white p-2 transform rotate-2 w-full h-full group overflow-hidden group-hover:scale-105 transition-transform duration-500 hover:z-10 cursor-pointer shadow-[4px_4px_0px_0px_var(--color-slate-dark)] hover:shadow-[8px_8px_0px_0px_var(--color-slate-dark)]">
+                                <div class="border-4 border-[#3B82F6] bg-white p-2 transform w-full h-full group overflow-hidden transition-all duration-500 hover:z-10 cursor-pointer shadow-[4px_4px_0px_0px_var(--color-slate-dark)] hover:shadow-[8px_8px_0px_0px_var(--color-slate-dark)] hover:-translate-y-2 hover:scale-[1.03] rotate-2 hover:rotate-0">
                                     <img src="{{ asset('images/cara-kerja-ev.jpg') }}" alt="EV Diagram" class="w-full h-full object-contain max-h-[230px] lg:max-h-[380px]">
                                 </div>
                             </div>
@@ -260,7 +260,7 @@
                                 </p>
                             </div>
                             <div class="w-full lg:w-1/2 flex items-center justify-center p-2 mt-4 lg:mt-0 max-h-[250px] lg:max-h-[400px]">
-                                <div class="border-4 border-solar-yellow bg-slate-800 p-2 w-full h-full group overflow-hidden group-hover:scale-105 transition-transform duration-500 hover:z-10 cursor-pointer shadow-[4px_4px_0px_0px_#FDB813] hover:shadow-[8px_8px_0px_0px_#FDB813]">
+                                <div class="border-4 border-solar-yellow bg-slate-800 p-2 transform w-full h-full group overflow-hidden transition-all duration-500 hover:z-10 cursor-pointer shadow-[4px_4px_0px_0px_#FDB813] hover:shadow-[8px_8px_0px_0px_#FDB813] hover:-translate-y-2 hover:scale-[1.03]">
                                     <img src="{{ asset('images/cara-kerja-pjuts.png') }}" alt="PJUTS Diagram" class="w-full h-full object-contain max-h-[230px] lg:max-h-[380px]" style="filter: brightness(1.2);">
                                 </div>
                             </div>
@@ -278,7 +278,7 @@
                                 </p>
                             </div>
                             <div class="w-full lg:w-1/2 flex items-center justify-center p-2 mt-4 lg:mt-0 max-h-[250px] lg:max-h-[400px]">
-                                <div class="border-4 border-slate-500 bg-white overflow-hidden transform -rotate-2 w-full h-full group group-hover:scale-105 transition-transform duration-500 hover:z-10 cursor-pointer shadow-[4px_4px_0px_0px_var(--color-slate-dark)] hover:shadow-[8px_8px_0px_0px_var(--color-slate-dark)]">
+                                <div class="border-4 border-slate-500 bg-white transform overflow-hidden w-full h-full group transition-all duration-500 hover:z-10 cursor-pointer shadow-[4px_4px_0px_0px_var(--color-slate-dark)] hover:shadow-[8px_8px_0px_0px_var(--color-slate-dark)] hover:-translate-y-2 hover:scale-[1.03] -rotate-2 hover:rotate-0">
                                     <img src="{{ asset('images/solar2.png') }}" alt="Industrial Solar" class="w-full h-full object-cover max-h-[230px] lg:max-h-[380px]">
                                 </div>
                             </div>
