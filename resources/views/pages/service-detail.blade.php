@@ -60,32 +60,64 @@
                         @endif
                     </div>
                     @if($service->slug === 'pjuts')
-                        <div class="mt-16">
-                            <h3 class="text-3xl font-black uppercase mb-8 border-b-4 border-solar-yellow pb-2 inline-block">Galeri Portofolio & Produk</h3>
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                                <div class="border-4 border-slate-dark shadow-brutal overflow-hidden group cursor-pointer bg-slate-100 flex items-center justify-center relative">
-                                    <div class="absolute inset-0 bg-slate-dark/0 group-hover:bg-slate-dark/20 transition-colors z-10 flex items-center justify-center">
-                                        <svg class="w-12 h-12 text-white opacity-0 group-hover:opacity-100 transition-opacity transform scale-50 group-hover:scale-100 duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"></path></svg>
+                        <div class="mt-16 space-y-16">
+                            <!-- Section 1: All-in-One Component -->
+                            <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12">
+                                <div class="w-full md:w-1/2">
+                                    <div class="border-4 border-slate-dark shadow-brutal bg-slate-100 p-6 flex justify-center">
+                                        <img src="{{ asset('images/pjuts-4.png') }}" alt="Komponen PJUTS Terintegrasi" class="max-h-[300px] object-contain hover:scale-105 transition-transform duration-500">
                                     </div>
-                                    <img src="{{ asset('images/pjuts-4.png') }}" alt="Detail Produk PJUTS" class="w-full h-64 object-contain p-4 transform transition-transform duration-700 group-hover:scale-110">
                                 </div>
-                                <div class="border-4 border-slate-dark shadow-brutal overflow-hidden group cursor-pointer relative">
-                                    <div class="absolute inset-0 bg-slate-dark/0 group-hover:bg-slate-dark/20 transition-colors z-10 flex items-center justify-center">
-                                        <svg class="w-12 h-12 text-white opacity-0 group-hover:opacity-100 transition-opacity transform scale-50 group-hover:scale-100 duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
-                                    </div>
-                                    <img src="{{ asset('images/pjuts-1.jpg') }}" alt="PJUTS Instalasi Kawasan" class="w-full h-64 object-cover transform transition-transform duration-700 group-hover:scale-110">
+                                <div class="w-full md:w-1/2">
+                                    <h3 class="text-3xl font-black uppercase mb-4 text-solar-yellow"><span class="text-transparent" style="-webkit-text-stroke: 1px var(--color-slate-dark);">Sistem</span> Terintegrasi (All-in-One)</h3>
+                                    <p class="font-medium text-lg leading-relaxed text-slate-700">
+                                        Desain revolusioner yang menggabungkan panel surya monokristalin efisiensi tinggi, modul LED cerdas, baterai lithium LiFePO4 tahan lama, dan *smart controller* dalam satu unit terpadu. Tanpa kabel menjuntai, instalasi super cepat, dan perawatan yang jauh lebih minim dibandingkan sistem konvensional.
+                                    </p>
                                 </div>
-                                <div class="border-4 border-slate-dark shadow-brutal overflow-hidden group cursor-pointer relative">
-                                    <div class="absolute inset-0 bg-slate-dark/0 group-hover:bg-slate-dark/20 transition-colors z-10 flex items-center justify-center">
-                                        <svg class="w-12 h-12 text-white opacity-0 group-hover:opacity-100 transition-opacity transform scale-50 group-hover:scale-100 duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                            </div>
+                            
+                            <!-- Section 2: Residential Area -->
+                            <div class="flex flex-col md:flex-row-reverse items-center gap-8 md:gap-12">
+                                <div class="w-full md:w-1/2">
+                                    <div class="border-4 border-slate-dark shadow-brutal overflow-hidden">
+                                        <img src="{{ asset('images/pjuts-1.jpg') }}" alt="PJUTS Kawasan Perumahan" class="w-full h-[300px] object-cover hover:scale-105 transition-transform duration-500">
                                     </div>
-                                    <img src="{{ asset('images/pjuts-2.png') }}" alt="PJUTS Instalasi Pesisir" class="w-full h-64 object-cover transform transition-transform duration-700 group-hover:scale-110">
                                 </div>
-                                <div class="border-4 border-slate-dark shadow-brutal overflow-hidden group cursor-pointer relative">
-                                    <div class="absolute inset-0 bg-slate-dark/0 group-hover:bg-slate-dark/20 transition-colors z-10 flex items-center justify-center">
-                                        <svg class="w-12 h-12 text-white opacity-0 group-hover:opacity-100 transition-opacity transform scale-50 group-hover:scale-100 duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                                <div class="w-full md:w-1/2">
+                                    <h3 class="text-3xl font-black uppercase mb-4">Penerangan <span class="text-solar-yellow underline decoration-4 underline-offset-4 decoration-slate-dark">Kawasan</span> Pintar</h3>
+                                    <p class="font-medium text-lg leading-relaxed text-slate-700">
+                                        Dilengkapi dengan sensor gerak (PIR) dan kontrol pencahayaan adaptif. Lampu akan meredup otomatis pada larut malam untuk menghemat baterai, dan akan kembali menyala terang 100% ketika mendeteksi kendaraan atau pejalan kaki yang lewat. Sangat ideal untuk keamanan perumahan dan jalan lingkungan.
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <!-- Section 3: Coastal / Extreme Environment -->
+                            <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12">
+                                <div class="w-full md:w-1/2">
+                                    <div class="border-4 border-slate-dark shadow-brutal overflow-hidden">
+                                        <img src="{{ asset('images/pjuts-2.png') }}" alt="PJUTS Jalan Tepi Pantai" class="w-full h-[300px] object-cover hover:scale-105 transition-transform duration-500">
                                     </div>
-                                    <img src="{{ asset('images/pjuts-3.jpg') }}" alt="PJUTS Instalasi Jalan Raya" class="w-full h-64 object-cover transform transition-transform duration-700 group-hover:scale-110">
+                                </div>
+                                <div class="w-full md:w-1/2">
+                                    <h3 class="text-3xl font-black uppercase mb-4 text-solar-yellow"><span class="text-transparent" style="-webkit-text-stroke: 1px var(--color-slate-dark);">Tangguh</span> di Segala Cuaca</h3>
+                                    <p class="font-medium text-lg leading-relaxed text-slate-700">
+                                        Dirancang dengan sertifikasi IP65/IP66 tahan air dan debu. Chasis *die-cast aluminium alloy* dengan pelapis anti-korosi membuatnya sangat cocok dioperasikan di lingkungan ekstrem, termasuk area pesisir pantai dengan tingkat kelembapan dan salinitas (garam) tinggi yang rawan karat.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Section 4: Highway illumination -->
+                            <div class="flex flex-col md:flex-row-reverse items-center gap-8 md:gap-12">
+                                <div class="w-full md:w-1/2">
+                                    <div class="border-4 border-slate-dark shadow-brutal overflow-hidden">
+                                        <img src="{{ asset('images/pjuts-3.jpg') }}" alt="PJUTS Jalan Raya Utama" class="w-full h-[300px] object-cover hover:scale-105 transition-transform duration-500">
+                                    </div>
+                                </div>
+                                <div class="w-full md:w-1/2">
+                                    <h3 class="text-3xl font-black uppercase mb-4">Skalabilitas <span class="text-solar-yellow underline decoration-4 underline-offset-4 decoration-slate-dark">Jalan Raya</span></h3>
+                                    <p class="font-medium text-lg leading-relaxed text-slate-700">
+                                        Optik lensa asimetris khusus (*batwing distribution*) memancarkan cahaya merata tanpa menyilaukan mata pengendara. Dirancang untuk memenuhi regulasi pencahayaan jalan tol dan jalan raya utama provinsi, memastikan visibilitas maksimal di luar batas jangkauan ketersediaan listrik PLN.
+                                    </p>
                                 </div>
                             </div>
                         </div>
