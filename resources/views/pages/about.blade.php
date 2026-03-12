@@ -1,45 +1,61 @@
 <x-layouts.app>
     <div class="pt-24 pb-12 bg-slate-dark text-white border-b-8 border-solar-yellow">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12">
-            <h1 class="text-6xl md:text-8xl font-black uppercase leading-none tracking-tighter mb-6" data-aos="fade-up">SIAPA <span class="text-solar-yellow">KAMI</span></h1>
-            <p class="text-xl md:text-2xl font-medium max-w-3xl border-l-8 border-eco-green pl-6" data-aos="fade-up" data-aos-delay="100">
-                Garnett Persada adalah firma teknik brutalis yang berdedikasi untuk membangun sistem tenaga surya berkinerja tinggi yang tangguh dan bertahan lama.
+            <h1 class="text-6xl md:text-8xl font-black uppercase leading-none tracking-tighter mb-4" data-aos="fade-up">CORPORATE <span class="text-solar-yellow">PROFILE</span></h1>
+            <h2 class="text-3xl md:text-4xl font-black uppercase tracking-widest text-white opacity-90 mb-6" data-aos="fade-up" data-aos-delay="50">GARNETT.</h2>
+            <p class="text-xl md:text-2xl font-medium max-w-4xl border-l-8 border-eco-green pl-6" data-aos="fade-up" data-aos-delay="100">
+                Integrator Infrastruktur Energi Terbarukan yang Berfokus pada Presisi Engineering dan Skalabilitas Industri.
             </p>
         </div>
     </div>
 
-    <!-- Vision & Mission -->
+    <!-- Corporate Profile Details -->
     <section class="py-24 bg-white relative">
         <div class="absolute right-0 top-0 w-1/3 h-full bg-slate-100 hidden lg:block -z-10 border-l-4 border-dashed border-slate-300"></div>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 mb-24">
+                <div data-aos="fade-right">
+                    <h2 class="text-4xl md:text-5xl font-black uppercase mb-8 border-b-8 border-solar-yellow pb-4 inline-block">Mitra<br>Strategis</h2>
+                    <p class="text-xl font-medium text-slate-700 leading-relaxed mb-6">
+                        Didirikan dengan visi untuk memimpin transisi energi nasional, Garnett beroperasi sebagai mitra strategis bagi sektor residensial dan komersial dalam mengadopsi teknologi tenaga surya.
+                    </p>
+                    <p class="text-xl font-medium text-slate-700 leading-relaxed max-w-lg bg-solar-yellow text-slate-dark p-6 border-4 border-slate-dark shadow-brutal mt-8 transform -rotate-1 hover:rotate-0 transition-transform">
+                        <strong>Kami bukan sekadar vendor</strong>, melainkan konsultan teknik yang memastikan setiap modul yang terpasang memberikan rasio efisiensi biaya terhadap energi yang optimal.
+                    </p>
+                </div>
                 
-                <div class="brutal-card p-12 bg-solar-yellow border-8 border-slate-dark transform rotate-1 hover:rotate-0 transition-transform" data-aos="fade-right">
-                    <div class="w-16 h-16 bg-white border-4 border-slate-dark flex items-center justify-center mb-8 shadow-brutal">
-                        <svg class="w-8 h-8 text-slate-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="square" stroke-linejoin="miter" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="square" stroke-linejoin="miter" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
+                <div class="space-y-8" data-aos="fade-left">
+                    <div class="brutal-card p-8 bg-slate-100 border-4 border-slate-dark shadow-[6px_6px_0px_0px_#1F7A63] hover:translate-x-2 transition-transform">
+                        <div class="w-12 h-12 bg-eco-green text-white flex items-center justify-center border-2 border-slate-dark mb-4">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="square" stroke-linejoin="miter" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        </div>
+                        <h3 class="text-2xl font-black uppercase mb-3 text-slate-dark">Tier-1 Technology</h3>
+                        <p class="font-medium text-slate-600">Implementasi perangkat keras dengan standar global demi menjamin durabilitas sistem hingga dekade mendatang.</p>
                     </div>
-                    <h2 class="text-4xl font-black uppercase mb-6">Visi Kami</h2>
-                    <p class="text-xl font-bold">Membangun arsitektur jaringan energi yang terdesentralisasi secara radikal yang sepenuhnya ditenagai oleh matahari, memprioritaskan integritas teknik dan kekuatan output mentah.</p>
+                    <div class="brutal-card p-8 bg-slate-100 border-4 border-slate-dark shadow-[6px_6px_0px_0px_#FDB813] hover:translate-x-2 transition-transform">
+                        <div class="w-12 h-12 bg-solar-yellow text-slate-dark flex items-center justify-center border-2 border-slate-dark mb-4">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="square" stroke-linejoin="miter" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
+                        </div>
+                        <h3 class="text-2xl font-black uppercase mb-3 text-slate-dark">Regulatory Expert</h3>
+                        <p class="font-medium text-slate-600">Kapabilitas penuh dalam manajemen regulasi ESDM, sertifikasi SLO, hingga sinkronisasi Meter Exim.</p>
+                    </div>
                 </div>
-                
-                <div class="flex flex-col justify-center" data-aos="fade-left">
-                    <h2 class="text-5xl font-black uppercase mb-8 border-b-4 border-slate-dark pb-4 inline-block self-start">Misi Kami</h2>
-                    <ul class="space-y-6">
-                        <li class="flex items-start gap-4 text-xl font-bold">
-                            <span class="w-8 h-8 shrink-0 bg-eco-green text-white border-2 border-slate-dark flex items-center justify-center shadow-brutal mt-1">1</span>
-                            Menyebarkan susunan solar panel yang sangat efisien dengan menggunakan prinsip rancang bangun yang butalis dan mengutamakan fungsi.
-                        </li>
-                        <li class="flex items-start gap-4 text-xl font-bold">
-                            <span class="w-8 h-8 shrink-0 bg-eco-green text-white border-2 border-slate-dark flex items-center justify-center shadow-brutal mt-1">2</span>
-                            Memberdayakan sektor industri untuk mencapai kemandirian energi absolut dan memangkas biaya operasional.
-                        </li>
-                        <li class="flex items-start gap-4 text-xl font-bold">
-                            <span class="w-8 h-8 shrink-0 bg-eco-green text-white border-2 border-slate-dark flex items-center justify-center shadow-brutal mt-1">3</span>
-                            Menghapus ketergantungan pada bahan bakar fosil melalui ekspansi energi terbarukan yang agresif.
-                        </li>
-                    </ul>
+            </div>
+
+            <!-- Brutal Stats -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-slate-dark text-white p-10 text-center border-4 border-slate-dark shadow-[8px_8px_0px_0px_#FFFFFF] transform hover:-translate-y-2 transition-transform" data-aos="fade-up" data-aos-delay="0">
+                    <span class="block text-7xl font-black text-solar-yellow mb-4">22<span class="text-4xl">%</span></span>
+                    <span class="block text-xl font-bold uppercase tracking-widest leading-tight">Efficiency<br>Rate</span>
                 </div>
-                
+                <div class="bg-solar-yellow text-slate-dark p-10 text-center border-4 border-slate-dark shadow-[8px_8px_0px_0px_#1F7A63] transform hover:-translate-y-2 transition-transform" data-aos="fade-up" data-aos-delay="100">
+                    <span class="block text-7xl font-black text-white mix-blend-difference mb-4" style="text-shadow: 3px 3px 0 #000;">25<span class="text-4xl">Yr</span></span>
+                    <span class="block text-xl font-bold uppercase tracking-widest leading-tight">Lifecycle<br>Policy</span>
+                </div>
+                <div class="bg-eco-green text-white p-10 text-center border-4 border-slate-dark shadow-[8px_8px_0px_0px_#FDB813] transform hover:-translate-y-2 transition-transform" data-aos="fade-up" data-aos-delay="200">
+                    <span class="block text-7xl font-black text-slate-dark mb-4">01<span class="text-4xl">St</span></span>
+                    <span class="block text-xl font-bold uppercase tracking-widest leading-tight">Engineering<br>Class</span>
+                </div>
             </div>
         </div>
     </section>
