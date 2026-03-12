@@ -9,7 +9,7 @@
 <div class="relative min-h-screen flex items-center justify-center pt-32 pb-16 px-4 sm:px-6 lg:px-8 bg-slate-dark text-white overflow-hidden">
     <!-- Background Image with Overlay -->
     <div class="absolute inset-0 z-0 bg-slate-200">
-        <img src="{{ $image ?? asset('images/solar4.png') }}" alt="Solar Panels" class="w-full h-full object-cover">
+        <img src="{{ $image ?? asset('images/solar-factory.jpg') }}" alt="Solar Panels" class="w-full h-full object-cover">
         <div class="absolute inset-0 bg-slate-dark/50 mix-blend-multiply"></div>
         <div class="absolute inset-0 bg-gradient-to-t from-slate-dark/80 via-transparent to-transparent"></div>
     </div>
