@@ -5,7 +5,7 @@
         @if(isset($project->featured_image) && $project->featured_image)
             <img src="{{ asset('storage/' . $project->featured_image) }}" alt="{{ $project->title ?? 'Project' }}" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
         @else
-            <img src="https://images.unsplash.com/photo-1592833159057-6cb562349e59?q=80&w=2069&auto=format&fit=crop" alt="Project" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+            <img src="{{ asset('images/solar3.png') }}" alt="Project" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
         @endif
         
         <div class="absolute top-4 right-4 bg-eco-green text-white font-bold px-3 py-1 border-2 border-slate-dark text-sm uppercase">

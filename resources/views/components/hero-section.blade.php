@@ -1,15 +1,15 @@
 @props([
     'title' => 'MEMBERDAYAKAN MASA DEPAN DENGAN SURYA',
     'subtitle' => 'Solusi energi terbarukan yang efisien, dan modern untuk kompleks perumahan dan industri.',
-    'image' => 'https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=2072&auto=format&fit=crop',
+    'image' => null,
     'ctaText' => 'Konsultasi Gratis',
     'ctaLink' => '/contact'
 ])
 
 <div class="relative min-h-screen flex items-center justify-center pt-32 pb-16 px-4 sm:px-6 lg:px-8 bg-slate-dark text-white overflow-hidden">
     <!-- Background Image with Overlay -->
-    <div class="absolute inset-0 z-0">
-        <img src="{{ $image }}" alt="Solar Panels" class="w-full h-full object-cover">
+    <div class="absolute inset-0 z-0 bg-slate-200">
+        <img src="{{ $image ?? asset('images/solar4.png') }}" alt="Solar Panels" class="w-full h-full object-cover">
         <div class="absolute inset-0 bg-slate-dark/50 mix-blend-multiply"></div>
         <div class="absolute inset-0 bg-gradient-to-t from-slate-dark/80 via-transparent to-transparent"></div>
     </div>

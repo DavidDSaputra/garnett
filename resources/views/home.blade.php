@@ -217,7 +217,7 @@
                 
                 <div class="w-full lg:w-1/2" data-aos="fade-left">
                     <div class="relative p-4 bg-white border-8 border-slate-dark shadow-brutal-lg transform rotate-2 hover:rotate-0 transition-transform duration-500">
-                        <img src="https://images.unsplash.com/photo-1548614606-52b4451f994b?q=80&w=2070&auto=format&fit=crop" alt="Solar Installation Worker" class="w-full h-auto border-4 border-slate-dark object-cover aspect-video">
+                        <img src="{{ asset('images/solar1.png') }}" alt="Solar Installation Worker" class="w-full h-auto border-4 border-slate-dark object-cover aspect-video filter grayscale hover:grayscale-0 transition-all duration-300">
                         <div class="absolute -bottom-8 -left-8 bg-eco-green text-white p-6 border-4 border-slate-dark shadow-brutal">
                             <span class="block text-4xl font-black">25+</span>
                             <span class="block text-sm font-bold uppercase tracking-widest">Tahun Garansi</span>

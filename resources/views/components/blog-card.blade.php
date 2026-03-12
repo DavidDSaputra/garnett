@@ -7,7 +7,7 @@
         </a>
     @else
         <a href="/blog/{{ $post->slug ?? '#' }}" class="block overflow-hidden border-b-4 border-slate-dark h-56 shrink-0 bg-slate-200">
-            <img src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?q=80&w=2072&auto=format&fit=crop" alt="Blog Post" class="w-full h-full object-cover hover:scale-110 transition-transform duration-700">
+            <img src="{{ asset('images/solar2.png') }}" alt="Blog Post" class="w-full h-full object-cover hover:scale-110 transition-transform duration-700">
         </a>
     @endif
     
