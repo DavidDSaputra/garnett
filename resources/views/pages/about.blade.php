@@ -76,7 +76,7 @@
                             <p class="font-medium text-slate-600">Garnett didirikan dengan misi untuk membawa teknik kelas berat ke sektor solar panel.</p>
                         </div>
                         <div class="order-1 md:order-2 w-16 h-16 bg-white border-4 border-slate-dark flex items-center justify-center z-10 font-black text-xl shadow-brutal group-hover:bg-solar-yellow transition-colors">
-                            2018
+                            2016
                         </div>
                         <div class="order-3 w-full md:w-5/12 pl-0 md:pl-8 hidden md:block"></div>
                     </div>
@@ -125,6 +125,16 @@
                     <p class="text-eco-green font-bold uppercase tracking-widest text-sm">Kepala Instalasi Sistem</p>
                 </div>
                 @endfor
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Map -->
+    <section class="py-24 bg-slate-100 border-t-8 border-slate-dark">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-5xl font-black uppercase mb-12 text-center" data-aos="fade-up">Lokasi <span class="bg-solar-yellow px-2 inline-block border-4 border-slate-dark transform -rotate-1 shadow-brutal">KAMI</span></h2>
+            <div class="w-full border-8 border-slate-dark shadow-[12px_12px_0px_0px_#1F7A63] bg-white p-2" data-aos="fade-up" data-aos-delay="100">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.5123437847897!2d106.6840797!3d-6.32759!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69e5356de1f009%3A0x1f2cd529ce371210!2sPT.%20Jarwinn%20Feliciti%20Hotapea!5e0!3m2!1sid!2sid!4v1773283951816!5m2!1sid!2sid" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
     </section>
