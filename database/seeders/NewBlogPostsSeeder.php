@@ -30,7 +30,7 @@ class NewBlogPostsSeeder extends Seeder
 <p class="mb-4">Ancaman utama fluktuasi cuaca tak dipungkiri sering membayangi laju produksi surya pada siang bolong mendung. Isu ini langsung dinetralisir lewat penyuntikan pasokan bank penyimpanan energi, selengkapnya Anda bisa memahami kapabilitas canggih tersebut dalam ulasan mengenai <a href="/blog/sistem-penyimpanan-energi-baterai" class="font-bold underline text-solar-yellow underline-offset-4 decoration-slate-dark">sistem penyimpanan energi baterai</a> yang menjadi tameng wajib bagi infrastruktur surya raksasa penguasa kawasan hijau masa ini.</p>',
                 'author' => 'Ahmad Teknisi Utama',
                 'published_at' => now(),
-                'featured_image' => 'blog/post-1.png'
+                'featured_image' => 'images/blog/post-1.png'
             ],
             [
                 'title' => 'Panduan Lengkap Sistem Penyimpanan Energi Baterai (BESS) untuk Rumah',
@@ -48,7 +48,7 @@ class NewBlogPostsSeeder extends Seeder
 <p class="mb-4">Modul baterai bertumpuk ini mampu merapat indah di panel dinding fasad atau berdampingan dengan unit kondensor listrik utama rumah perbukitan off-grid tanpa kesan semrawut industri. Kombinasinya dijamin amat mematikan apabila Anda mengeksekusi pemasangannya sesuai taklimat dalam <a href="/blog/panduan-instalasi-plts-atap-arsitektur" class="font-bold underline text-solar-yellow underline-offset-4 decoration-slate-dark">panduan instalasi PLTS atap</a>, yang mana sirkuit atas murni berfungsi mengisi ulang bank baterai menakjubkan ini secara real-time kapanpun mentari bersinar tajam.</p>',
                 'author' => 'Budi Supervisor',
                 'published_at' => now(),
-                'featured_image' => 'blog/post-2.jpg'
+                'featured_image' => 'images/blog/post-2.jpg'
             ],
             [
                 'title' => 'Panduan Instalasi PLTS Atap Estetis pada Arsitektur Rumah Modern',
@@ -66,7 +66,7 @@ class NewBlogPostsSeeder extends Seeder
 <p class="mb-4">Modul surya perkasa di punggung hunian hanya bagaikan bongkahan benda mati bisu meretas voltase searah yang tidak dapat menggerakkan motor pendingin runanga (AC). Rantai listrik murni ini harus terlebih dahulu dijinakkan, diarahkan dengan cerdas dan direkonsiliasikan ke fasa sinkron oleh kecanggihan <a href="/blog/teknologi-inverter-hybrid-terbaru" class="font-bold underline text-solar-yellow underline-offset-4 decoration-slate-dark">teknologi inverter hybrid terbaru</a> yang bertindak sebagai jenderal lapangan penguasa seluruh skema utilitas listrik modern bangunan elit Anda.</p>',
                 'author' => 'Reza Arsitek Surya',
                 'published_at' => now(),
-                'featured_image' => 'blog/post-3.jpg'
+                'featured_image' => 'images/blog/post-3.jpg'
             ],
             [
                 'title' => 'Mengoptimalkan Efisiensi Daya Listrik Melalui Teknologi Inverter Hybrid Generasi Terbaru',
@@ -84,7 +84,7 @@ class NewBlogPostsSeeder extends Seeder
 <p class="mb-4">Diplot menantang embun garam pekat tepi ombak pesisir atau gigitan dingin bekunya suhu dataran puncak hutan alpine, balok elektronik beringas ini mengandalkan pelat cangkang penukar suhu tanpa kipas bising dan sambungan tanah (earth bound) pelucut trajektori busur petir tajam, menuntun para *solar expert* senantiasa menetapkan mandat ketaatan baku di atas <a href="/blog/standar-keselamatan-pemasangan-panel-surya" class="font-bold underline text-solar-yellow underline-offset-4 decoration-slate-dark">standar keselamatan pemasangan panel surya</a> untuk mengeliminir ancaman konsleting di seluruh dinding perbukitan instalasi bebas malapetaka kelalaian pekerja.</p>',
                 'author' => 'Hendra Ahli Kelistrikan',
                 'published_at' => now(),
-                'featured_image' => 'blog/post-4.jpg'
+                'featured_image' => 'images/blog/post-4.jpg'
             ],
             [
                 'title' => 'Eksklusif: Standar Keselamatan Ahli dan Mutu Prosedur Pemasangan Panel Surya Tingkat Industri Mumpuni',
@@ -102,7 +102,7 @@ class NewBlogPostsSeeder extends Seeder
 <p class="mb-4">Regulasi proteksi nyawa absolut yang dicambuk paksa ke punggung personil instalatir komando rumah tunggal tak ayal menjadi landasan yang lebih brutal diproyeksikan manakala tim lapangan menyerbu hamparan savana luas tak bertuan dalam rangka merakit instalasi bertenaga magis memicu ledakan performa <a href="/blog/peran-plts-skala-besar-di-indonesia" class="font-bold underline text-solar-yellow underline-offset-4 decoration-slate-dark">peran PLTS skala besar di indonesia</a> agar menembus urat nadi kelistrikan negara tanpa menebar maut pada nyawa sehelai rambut pun di hamparan tanah lapang tapak suci solar energy kita.</p>',
                 'author' => 'Tim Eksekusi K3 garnett',
                 'published_at' => now(),
-                'featured_image' => 'blog/post-5.jpg'
+                'featured_image' => 'images/blog/post-5.jpg'
             ]
         ];
 

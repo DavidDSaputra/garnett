@@ -21,7 +21,7 @@
             
             @if(isset($post->featured_image) && $post->featured_image)
                 <div class="w-full aspect-[21/9] border-8 border-slate-dark mb-12 shadow-brutal-lg" data-aos="fade-up" data-aos-delay="300">
-                    <img src="{{ asset('storage/' . $post->featured_image) }}" alt="{{ $post->title }}" fetchpriority="high" decoding="sync" class="w-full h-full object-cover">
+                    <img src="{{ str_starts_with($post->featured_image, 'images/') ? asset($post->featured_image) : asset('storage/' . $post->featured_image) }}" alt="{{ $post->title }}" fetchpriority="high" decoding="sync" class="w-full h-full object-cover">
                 </div>
             @else
                 <!-- Abstract Art Substitute -->
